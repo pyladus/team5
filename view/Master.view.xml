@@ -1,13 +1,196 @@
 <core:View controllerName="Refugee_Book.view.Master" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:table="sap.ui.table"
 	xmlns="sap.m">
-	<Page id="homePage" title="Refugee Book" class="bg">
+	<!--<Page-->
+	<!--	title="Future Car Trends"-->
+	<!--	class="sapUiContentPadding"-->
+	<!--	showNavButton="true" >	-->
+	   <!-- <ToolHeader>-->
+    <!--    <Button icon="sap-icon://menu2" type="Transparent">-->
+    <!--        <layoutData>-->
+    <!--            <OverflowToolbarLayoutData priority="NeverOverflow" />-->
+    <!--        </layoutData>-->
+    <!--    </Button>-->
+    <!--    <ToolbarSpacer />-->
+    <!--    <core:Icon src="sap-icon://activate">-->
+    <!--    </core:Icon>-->
+    <!--    <Text text="Name of the Tool" wrapping="false">-->
+    <!--        <layoutData>-->
+    <!--            <OverflowToolbarLayoutData priority="Disappear" />-->
+    <!--        </layoutData>-->
+    <!--    </Text>-->
+    <!--    <ToolbarSpacer />-->
+    <!--    <Button text="Alan Smith" type="Transparent" press="handleUserNamePress">-->
+    <!--        <layoutData>-->
+    <!--            <OverflowToolbarLayoutData priority="NeverOverflow" />-->
+    <!--        </layoutData>-->
+    <!--    </Button>-->
+    <!--</ToolHeader>-->
+
+	<!--	<headerContent>-->
+	<!--		<Button icon="sap-icon://action" tooltip="Share" />-->
+	<!--	</headerContent>-->
+	<!--	<subHeader>-->
+	<!--		<Toolbar>-->
+	<!--			<SearchField />-->
+	<!--		</Toolbar>-->
+	<!--	</subHeader>-->
+	<!--	<content>-->
+	<!--		<VBox>-->
+	<!--			<Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />-->
+	<!--		</VBox>-->
+	<!--	</content>-->
+	<!--	<footer>-->
+	<!--		<Toolbar>-->
+	<!--			<ToolbarSpacer/>-->
+	<!--			<Button text="Accept" type="Accept" />-->
+	<!--			<Button text="Reject" type="Reject" />-->
+	<!--			<Button text="Edit" />-->
+	<!--			<Button text="Delete" />-->
+	<!--		</Toolbar>-->
+	<!--	</footer>-->
+	<!--</Page>-->
+	<!--<header>-->
+	<!--	  <Button text="Alan Smith" type="Transparent" press="handleUserNamePress">-->
+ <!--           <layoutData>-->
+ <!--               <OverflowToolbarLayoutData priority="NeverOverflow" />-->
+ <!--           </layoutData>-->
+ <!--       </Button>-->
+	<!--</header>-->
+	<Page id="homePage" navButtonPress="onNavButtonPress" showNavButton="true" title="Future Car Trends - Decisionator" class="bg">
 		<content>
-			<Image class="img" densityAware="false" src="./img/refugee_book.png" width="30%">
-				<layoutData>
-					<FlexItemData growFactor="1"/>
-				</layoutData>
-			</Image>
-			
+		
+		<SearchField width="95%" class="sapUiMediumMargin"  />
+
+			<!--<Image class="img" densityAware="false" src="./img/refugee_book.png" width="30%">-->
+			<!--	<layoutData>-->
+			<!--		<FlexItemData growFactor="1"/>-->
+			<!--	</layoutData>-->
+			<!--</Image>-->
+		
+	<Panel expandable="true" expanded="false" headerText="Last Customer Group" width="auto" class="sapUiResponsiveMargin">
+	<content>
+	<!--<Carousel class="sapUiContentPadding" loop="true">-->
+
+	<GenericTile header="Customer Group 1" class="myCustomTile" size="S" frameType="OneByOne"
+		press="press">
+		<tileContent>
+			<TileContent unit="2016/03/24" size="S">
+				<content>
+										<FeedContent contentText="@@notify Great outcome of the Presentation today. The new functionality and the new design was well received."
+						subheader="about 1 minute ago in Computer Market" value="132">
+					</FeedContent>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	 
+	<GenericTile header="Customer Group 2"  class="myCustomTile"  size="S" frameType="OneByOne"
+		press="press">
+
+		<tileContent>		
+			<TileContent unit="2016/03/24" size="S">
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	<GenericTile header="Customer Group 3" class="myCustomTile" size="S" frameType="OneByOne"
+		press="press">
+		<tileContent>
+			<TileContent unit="2016/03/22" size="S">
+				<content>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	 
+	<GenericTile header="Customer Group 4"  class="myCustomTile"  size="S" frameType="OneByOne"
+		press="press">
+		<tileContent>
+			<TileContent unit="2016/03/20" size="S">
+				<content>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	<GenericTile header="Customer Group 5" class="myCustomTile" size="S" frameType="OneByOne"
+		press="press">
+		<tileContent>
+			<TileContent unit="2016/03/20" size="S">
+				<content>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	 
+	<GenericTile header="Customer Group 6"  class="myCustomTile"  size="S" frameType="OneByOne"
+		press="press">
+		<tileContent>
+			<TileContent unit="2016/03/19" size="S">
+				<content>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	<!--</Carousel>	-->
+	</content>
+	</Panel>
+	<Panel expandable="true" expanded="false" headerText="Last Trends" width="auto" class="sapUiResponsiveMargin">
+		<content>
+			<GenericTile header="Global Margin" class="myCustomTile" size="S" frameType="OneByOne"
+				press="press">
+				<tileContent>
+					<TileContent unit="EUR" size="S">
+						<content>
+							<NumericContent size="S" scale="B" value="3528"
+								valueColor="Good" indicator="Up" />
+						</content>
+					</TileContent>
+				</tileContent>
+			</GenericTile>
+			 
+			<GenericTile header="Global Margin"  class="myCustomTile"  size="S" frameType="OneByOne"
+				press="press">
+				<tileContent>
+					<TileContent unit="EUR" size="S">
+						<content>
+							<NumericContent size="S" scale="B" value="3528"
+								valueColor="Good" indicator="Up" />
+						</content>
+					</TileContent>
+				</tileContent>
+			</GenericTile>
+		</content>
+	</Panel>
+	
+	<Panel expandable="true" expanded="false" headerText="Templates" width="auto" class="sapUiResponsiveMargin">
+		<content>
+			<GenericTile header="Global Margin" class="myCustomTile" size="S" frameType="OneByOne"
+				press="press">
+				<tileContent>
+					<TileContent unit="EUR" size="S">
+						<content>
+							<NumericContent size="S" scale="B" value="3528"
+								valueColor="Good" indicator="Up" />
+						</content>
+					</TileContent>
+				</tileContent>
+			</GenericTile>
+			 
+			<GenericTile header="Global Margin"  class="myCustomTile"  size="S" frameType="OneByOne"
+				press="press">
+				<tileContent>
+					<TileContent unit="EUR" size="S">
+						<content>
+							<NumericContent size="S" scale="B" value="3528"
+								valueColor="Good" indicator="Up" />
+						</content>
+					</TileContent>
+				</tileContent>
+			</GenericTile>
+		</content>
+		<!--<content>-->
+		<!--	<Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />-->
+		<!--</content>-->
+	</Panel>
 			<TileContainer height="50%" id="container" tileDelete="handleTileDelete">
 				<StandardTile class="tile-css" icon="sap-icon://account" id="myprofile" info="View/update profile" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"
 					press="main_page_nav" title="My Profile" type="{type}" />
