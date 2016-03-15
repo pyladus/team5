@@ -47,8 +47,11 @@ h4 {
 }
 
 .myCustomTile {  
-
-         margin: 0.5rem;  
+       margin: 0.5rem; 
   } 
+  
+.customTileSize div {
+	font-size: 30px !important;
+}
 
 /* Background Reference: http://www.thetahealing-muenchen.com/helping-hand.jpg*/

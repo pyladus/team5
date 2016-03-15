@@ -71,61 +71,68 @@
 	<content>
 	<!--<Carousel class="sapUiContentPadding" loop="true">-->
 
-	<GenericTile header="Customer Group 1" class="myCustomTile" size="S" frameType="OneByOne"
+	<GenericTile header="Customer Group 1" subheader="Inc 20.000 - 30.000" class="myCustomTile" size="S" frameType="OneByOne"
 		press="press">
 		<tileContent>
 			<TileContent unit="2016/03/24" size="S">
 				<content>
-										<FeedContent contentText="@@notify Great outcome of the Presentation today. The new functionality and the new design was well received."
-						subheader="about 1 minute ago in Computer Market" value="132">
-					</FeedContent>
+					<NumericContent value="20-50"  size="S"
+						 truncateValueTo="14"
+						width="100%" 	icon="sap-icon://employee" />
 				</content>
 			</TileContent>
 		</tileContent>
 	</GenericTile>
 	 
-	<GenericTile header="Customer Group 2"  class="myCustomTile"  size="S" frameType="OneByOne"
+	<GenericTile header="Customer Group 2" subheader="Inc 1000 - 2000" class="myCustomTile"  size="S" frameType="OneByOne"
 		press="press">
 
 		<tileContent>		
 			<TileContent unit="2016/03/24" size="S">
+				<content>
+					<NumericContent size="S" value="20-40" truncateValueTo="14" icon="sap-icon://employee" />
+				</content>
 			</TileContent>
 		</tileContent>
 	</GenericTile>
-	<GenericTile header="Customer Group 3" class="myCustomTile" size="S" frameType="OneByOne"
+	<GenericTile header="Customer Group 3" subheader="Inc 50.000 - 99.000" class="myCustomTile" size="S" frameType="OneByOne"
 		press="press">
 		<tileContent>
 			<TileContent unit="2016/03/22" size="S">
 				<content>
+					<NumericContent size="S" value="18-20" truncateValueTo="14" icon="sap-icon://employee" />
 				</content>
 			</TileContent>
 		</tileContent>
 	</GenericTile>
 	 
-	<GenericTile header="Customer Group 4"  class="myCustomTile"  size="S" frameType="OneByOne"
+	<GenericTile header="Customer Group 4"  subheader="Inc 2.000 - 3.000" class="myCustomTile" truncateValueTo="14" size="S" frameType="OneByOne"
 		press="press">
 		<tileContent>
 			<TileContent unit="2016/03/20" size="S">
 				<content>
+					<NumericContent size="S" value="60" icon="sap-icon://employee" />	
 				</content>
 			</TileContent>
 		</tileContent>
 	</GenericTile>
-	<GenericTile header="Customer Group 5" class="myCustomTile" size="S" frameType="OneByOne"
+	<GenericTile header="Customer Group 5" subheader="Inc 25.000 - 30.000" class="myCustomTile" truncateValueTo="14" size="S" frameType="OneByOne"
 		press="press">
 		<tileContent>
 			<TileContent unit="2016/03/20" size="S">
 				<content>
+					<NumericContent size="S" value="50-89" icon="sap-icon://employee" />
 				</content>
 			</TileContent>
 		</tileContent>
 	</GenericTile>
 	 
-	<GenericTile header="Customer Group 6"  class="myCustomTile"  size="S" frameType="OneByOne"
+	<GenericTile header="Customer Group 6" subheader="Inc 10.000 - 30.000" class="myCustomTile"  truncateValueTo="14"  size="S" frameType="OneByOne"
 		press="press">
 		<tileContent>
 			<TileContent unit="2016/03/19" size="S">
 				<content>
+					<NumericContent size="S" value="30"  truncateValueTo="14"  icon="sap-icon://employee" />
 				</content>
 			</TileContent>
 		</tileContent>
@@ -135,24 +142,24 @@
 	</Panel>
 	<Panel expandable="true" expanded="false" headerText="Last Trends" width="auto" class="sapUiResponsiveMargin">
 		<content>
-			<GenericTile header="Global Margin" class="myCustomTile" size="S" frameType="OneByOne"
+			<GenericTile header="Color" class="myCustomTile" size="S" frameType="OneByOne"
 				press="press">
 				<tileContent>
-					<TileContent unit="EUR" size="S">
+					<TileContent unit="2016/03/24" size="S">
 						<content>
-							<NumericContent size="S" scale="B" value="3528"
+							<NumericContent size="S" scale="B" value="90%"
 								valueColor="Good" indicator="Up" />
 						</content>
 					</TileContent>
 				</tileContent>
 			</GenericTile>
 			 
-			<GenericTile header="Global Margin"  class="myCustomTile"  size="S" frameType="OneByOne"
+			<GenericTile header="Functions"  class="myCustomTile"  size="S" frameType="OneByOne"
 				press="press">
 				<tileContent>
-					<TileContent unit="EUR" size="S">
+					<TileContent unit="2016/05/24" size="S">
 						<content>
-							<NumericContent size="S" scale="B" value="3528"
+							<NumericContent size="S" scale="B" value="35%"
 								valueColor="Good" indicator="Up" />
 						</content>
 					</TileContent>
@@ -162,30 +169,68 @@
 	</Panel>
 	
 	<Panel expandable="true" expanded="false" headerText="Templates" width="auto" class="sapUiResponsiveMargin">
-		<content>
-			<GenericTile header="Global Margin" class="myCustomTile" size="S" frameType="OneByOne"
-				press="press">
-				<tileContent>
-					<TileContent unit="EUR" size="S">
-						<content>
-							<NumericContent size="S" scale="B" value="3528"
-								valueColor="Good" indicator="Up" />
-						</content>
-					</TileContent>
-				</tileContent>
-			</GenericTile>
+		
+	<content>
+
+	<GenericTile header="Hans Peter" subheader="Inc 20.000 - 30.000" class="myCustomTile" size="S" frameType="OneByOne"
+		press="press">
+		<tileContent>
+			<TileContent unit="2016/03/24" size="S">
+				<content>
+					<NumericContent value="20-50"  size="S"
+						 truncateValueTo="14"
+						width="100%" 	icon="sap-icon://employee" />
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	 
+	<GenericTile header="Kevin Mustermann"  class="myCustomTile"  size="S" frameType="OneByOne"
+		press="press">
+
+		<tileContent>		
+			<TileContent unit="2016/03/24" size="S">
+				<content>
+					<NumericContent size="S" value="20-40" truncateValueTo="14" icon="sap-icon://employee" />
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	<GenericTile header="May Meyer" class="myCustomTile" size="S" frameType="OneByOne"
+		press="press">
+		<tileContent>
+			<TileContent unit="2016/03/22" size="S">
+				<content>
+					<NumericContent size="S" value="18-20" truncateValueTo="14" icon="sap-icon://employee" />
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	 
+	<GenericTile header="John Doe"  class="myCustomTile" truncateValueTo="14" size="S" frameType="OneByOne"
+		press="press">
+		<tileContent>
+			<TileContent unit="2016/03/20" size="S">
+				<content>
+					<NumericContent size="S" value="60" icon="sap-icon://employee" />	
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	<GenericTile header="Sporter" class="myCustomTile" truncateValueTo="14" size="S" frameType="OneByOne"
+		press="press">
+		<tileContent>
+			<TileContent unit="2016/03/20" size="S">
+				<content>
+					<NumericContent size="S" value="50-89" icon="sap-icon://employee" />
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	 
+
 			 
-			<GenericTile header="Global Margin"  class="myCustomTile"  size="S" frameType="OneByOne"
-				press="press">
-				<tileContent>
-					<TileContent unit="EUR" size="S">
-						<content>
-							<NumericContent size="S" scale="B" value="3528"
-								valueColor="Good" indicator="Up" />
-						</content>
-					</TileContent>
-				</tileContent>
-			</GenericTile>
+
 		</content>
 		<!--<content>-->
 		<!--	<Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />-->
