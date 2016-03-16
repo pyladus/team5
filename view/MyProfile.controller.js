@@ -7,7 +7,7 @@ sap.ui.controller("Refugee_Book.view.MyProfile", {
 	 */
 	onInit: function() {
 			var model = new sap.ui.model.json.JSONModel();
-			model.loadData("./profilePage.json", false);
+			model.loadData("./data.json", false);
 			this.getView().setModel(model);
 		},
 		onPress: function() {

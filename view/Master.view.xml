@@ -1,72 +1,68 @@
-<core:View controllerName="Refugee_Book.view.Master" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:table="sap.ui.table"
-	xmlns="sap.m">
-	<!--<Page-->
-	<!--	title="Future Car Trends"-->
-	<!--	class="sapUiContentPadding"-->
-	<!--	showNavButton="true" >	-->
-	   <!-- <ToolHeader>-->
-    <!--    <Button icon="sap-icon://menu2" type="Transparent">-->
-    <!--        <layoutData>-->
-    <!--            <OverflowToolbarLayoutData priority="NeverOverflow" />-->
-    <!--        </layoutData>-->
-    <!--    </Button>-->
-    <!--    <ToolbarSpacer />-->
-    <!--    <core:Icon src="sap-icon://activate">-->
-    <!--    </core:Icon>-->
-    <!--    <Text text="Name of the Tool" wrapping="false">-->
-    <!--        <layoutData>-->
-    <!--            <OverflowToolbarLayoutData priority="Disappear" />-->
-    <!--        </layoutData>-->
-    <!--    </Text>-->
-    <!--    <ToolbarSpacer />-->
-    <!--    <Button text="Alan Smith" type="Transparent" press="handleUserNamePress">-->
-    <!--        <layoutData>-->
-    <!--            <OverflowToolbarLayoutData priority="NeverOverflow" />-->
-    <!--        </layoutData>-->
-    <!--    </Button>-->
-    <!--</ToolHeader>-->
-
-	<!--	<headerContent>-->
-	<!--		<Button icon="sap-icon://action" tooltip="Share" />-->
-	<!--	</headerContent>-->
-	<!--	<subHeader>-->
-	<!--		<Toolbar>-->
-	<!--			<SearchField />-->
-	<!--		</Toolbar>-->
-	<!--	</subHeader>-->
-	<!--	<content>-->
-	<!--		<VBox>-->
-	<!--			<Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />-->
-	<!--		</VBox>-->
-	<!--	</content>-->
-	<!--	<footer>-->
-	<!--		<Toolbar>-->
-	<!--			<ToolbarSpacer/>-->
-	<!--			<Button text="Accept" type="Accept" />-->
-	<!--			<Button text="Reject" type="Reject" />-->
-	<!--			<Button text="Edit" />-->
-	<!--			<Button text="Delete" />-->
-	<!--		</Toolbar>-->
-	<!--	</footer>-->
-	<!--</Page>-->
-	<!--<header>-->
-	<!--	  <Button text="Alan Smith" type="Transparent" press="handleUserNamePress">-->
- <!--           <layoutData>-->
- <!--               <OverflowToolbarLayoutData priority="NeverOverflow" />-->
- <!--           </layoutData>-->
- <!--       </Button>-->
-	<!--</header>-->
-	<Page id="homePage" navButtonPress="onNavButtonPress" showNavButton="true" title="Future Car Trends - Decisionator" class="bg">
+<mvc:View
+	controllerName="Refugee_Book.view.Master"
+	xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	class="viewPadding">
+		<u:Shell
+			id="myShell"
+			icon="{/logo}">
+			<u:headItems>
+				<u:ShellHeadItem
+					tooltip="Configuration"
+					icon="sap-icon://menu2"
+					press="handlePressConfiguration" />
+				<u:ShellHeadItem
+					tooltip="Home"
+					icon="sap-icon://home"
+					visible="false"
+					press="handlePressHome" />
+			</u:headItems>
+			<u:headEndItems>
+				<u:ShellHeadItem
+					icon="sap-icon://log"
+					tooltip="Logoff"
+					press="handleLogoffPress" />
+			</u:headEndItems>
+			<u:user>
+				<u:ShellHeadUserItem
+					image="sap-icon://person-placeholder"
+					username="Karl Mustermann"
+					press="handleUserItemPressed" />
+			</u:user>
+			<u:search>
+				<SearchField
+					search="handleSearchPressed"/>
+			</u:search>
+			<u:paneContent>
+				<Text text="Lorem ipsum" />
+			</u:paneContent>
+		</u:Shell>
+			<Page id="homePage" navButtonPress="onNavButtonPress" showNavButton="true" title="Future Car Trends - Decisionator" class="bg">
 		<content>
 		
-		<SearchField width="95%" class="sapUiMediumMargin"  />
+		<!--<SearchField width="95%" class="sapUiMediumMargin"  />-->
 
 			<!--<Image class="img" densityAware="false" src="./img/refugee_book.png" width="30%">-->
 			<!--	<layoutData>-->
 			<!--		<FlexItemData growFactor="1"/>-->
 			<!--	</layoutData>-->
 			<!--</Image>-->
-		
+		<!--<Panel width="auto" class="sapUiMediumMargin" hAlign="center">-->
+				<FlexBox
+					height="100px"
+					alignItems="Right"
+					justifyContent="Right">
+				<Button text="" 
+						press="onPress" icon="sap-icon://add"
+						ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+
+				</Button>
+				</FlexBox>
+		<!--</FlexBox>-->
+		<!--</Panel>-->
+
 	<Panel expandable="true" expanded="false" headerText="Last Customer Group" width="auto" class="sapUiResponsiveMargin">
 	<content>
 	<!--<Carousel class="sapUiContentPadding" loop="true">-->
@@ -76,7 +72,7 @@
 		<tileContent>
 			<TileContent unit="2016/03/24" size="S">
 				<content>
-					<NumericContent value="20-50"  size="S"
+					<NumericContent value="20-50"  size="S"  scale="Y"  
 						 truncateValueTo="14"
 						width="100%" 	icon="sap-icon://employee" />
 				</content>
@@ -90,7 +86,7 @@
 		<tileContent>		
 			<TileContent unit="2016/03/24" size="S">
 				<content>
-					<NumericContent size="S" value="20-40" truncateValueTo="14" icon="sap-icon://employee" />
+					<NumericContent size="S" value="20-40"  scale="Y"  truncateValueTo="14" icon="sap-icon://employee" />
 				</content>
 			</TileContent>
 		</tileContent>
@@ -100,7 +96,7 @@
 		<tileContent>
 			<TileContent unit="2016/03/22" size="S">
 				<content>
-					<NumericContent size="S" value="18-20" truncateValueTo="14" icon="sap-icon://employee" />
+					<NumericContent size="S" value="18-20"  scale="Y"  truncateValueTo="14" icon="sap-icon://employee" />
 				</content>
 			</TileContent>
 		</tileContent>
@@ -111,7 +107,7 @@
 		<tileContent>
 			<TileContent unit="2016/03/20" size="S">
 				<content>
-					<NumericContent size="S" value="60" icon="sap-icon://employee" />	
+					<NumericContent size="S" value="60"  scale="Y"  icon="sap-icon://employee" />	
 				</content>
 			</TileContent>
 		</tileContent>
@@ -121,7 +117,7 @@
 		<tileContent>
 			<TileContent unit="2016/03/20" size="S">
 				<content>
-					<NumericContent size="S" value="50-89" icon="sap-icon://employee" />
+					<NumericContent size="S" value="50-89"  scale="Y"  icon="sap-icon://employee" />
 				</content>
 			</TileContent>
 		</tileContent>
@@ -132,7 +128,7 @@
 		<tileContent>
 			<TileContent unit="2016/03/19" size="S">
 				<content>
-					<NumericContent size="S" value="30"  truncateValueTo="14"  icon="sap-icon://employee" />
+					<NumericContent size="S" value="30"   scale="Y"  truncateValueTo="14"  icon="sap-icon://employee" />
 				</content>
 			</TileContent>
 		</tileContent>
@@ -142,24 +138,24 @@
 	</Panel>
 	<Panel expandable="true" expanded="false" headerText="Last Trends" width="auto" class="sapUiResponsiveMargin">
 		<content>
-			<GenericTile header="Color" class="myCustomTile" size="S" frameType="OneByOne"
+			<GenericTile header="Color Group1" class="myCustomTile" size="S" frameType="OneByOne"
 				press="press">
 				<tileContent>
 					<TileContent unit="2016/03/24" size="S">
 						<content>
-							<NumericContent size="S" scale="B" value="90%"
+							<NumericContent size="S" scale="%" value="90"
 								valueColor="Good" indicator="Up" />
 						</content>
 					</TileContent>
 				</tileContent>
 			</GenericTile>
 			 
-			<GenericTile header="Functions"  class="myCustomTile"  size="S" frameType="OneByOne"
+			<GenericTile header="Functions Group2"  class="myCustomTile"  size="S" frameType="OneByOne"
 				press="press">
 				<tileContent>
 					<TileContent unit="2016/05/24" size="S">
 						<content>
-							<NumericContent size="S" scale="B" value="35%"
+							<NumericContent size="S" scale="%" value="35"
 								valueColor="Good" indicator="Up" />
 						</content>
 					</TileContent>
@@ -168,7 +164,7 @@
 		</content>
 	</Panel>
 	
-	<Panel expandable="true" expanded="false" headerText="Templates" width="auto" class="sapUiResponsiveMargin">
+	<Panel expandable="true" expanded="false" headerText="Saved Groups" width="auto" class="sapUiResponsiveMargin">
 		
 	<content>
 
@@ -191,7 +187,7 @@
 		<tileContent>		
 			<TileContent unit="2016/03/24" size="S">
 				<content>
-					<NumericContent size="S" value="20-40" truncateValueTo="14" icon="sap-icon://employee" />
+					<NumericContent size="S" value="20-40"  scale="Y"  truncateValueTo="14" icon="sap-icon://employee" />
 				</content>
 			</TileContent>
 		</tileContent>
@@ -201,7 +197,7 @@
 		<tileContent>
 			<TileContent unit="2016/03/22" size="S">
 				<content>
-					<NumericContent size="S" value="18-20" truncateValueTo="14" icon="sap-icon://employee" />
+					<NumericContent size="S" value="18-20"  scale="Y"  truncateValueTo="14" icon="sap-icon://employee" />
 				</content>
 			</TileContent>
 		</tileContent>
@@ -212,7 +208,7 @@
 		<tileContent>
 			<TileContent unit="2016/03/20" size="S">
 				<content>
-					<NumericContent size="S" value="60" icon="sap-icon://employee" />	
+					<NumericContent size="S" value="60"  scale="Y"  icon="sap-icon://employee" />	
 				</content>
 			</TileContent>
 		</tileContent>
@@ -240,12 +236,14 @@
 				<StandardTile class="tile-css" icon="sap-icon://account" id="myprofile" info="View/update profile" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"
 					press="main_page_nav" title="My Profile" type="{type}" />
 				<StandardTile class="tile-css" icon="sap-icon://education" id="courses" info="Browse through courses" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"
-					press="main_page_nav" title="Courses" type="{type}"/>
+					press="main_page_nav" title="Create Group" type="{type}"/>
 				<StandardTile class="tile-css" icon="sap-icon://customer-financial-fact-sheet" id="jobmarket" info="Get your Job here" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"
-					press="main_page_nav" title="Job Market Place" type="{type}"/>
+					press="main_page_nav" title="Saved Groups" type="{type}"/>
+				<StandardTile class="tile-css" icon="sap-icon://account" id="cockpit" info="View/cockpit" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"
+					press="main_page_nav" title="Help" type="{type}" />
 			
 			</TileContainer>
 		</content>
 		<footer></footer>
 	</Page>
-</core:View>
+</mvc:View>

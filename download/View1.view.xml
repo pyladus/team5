@@ -1,0 +1,38 @@
+<mvc:View controllerName="team5.controller.View1" xmlns:c="sap.suite.ui.commons" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:viz="sap.viz.ui5.controls" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<l:Grid class="sapUiSmallMarginTop" defaultSpan="L6 M6 S10" hSpacing="2">
+						<l:content>
+							<Image src="http://upload.wikimedia.org/wikipedia/commons/2/25/George_Washington_as_CIC_of_the_Continental_Army_bust.jpg" width="100%">
+								<layoutData>
+									<l:GridData linebreakL="true" linebreakM="true" linebreakS="true" span="L3 M3 S8"/>
+								</layoutData>
+							</Image>
+							<VBox>
+								<Text class="nameTitle" text="asdasd asd asda"/>
+								<Text text="asdasdasd"/>
+							</VBox>
+						</l:content>
+					</l:Grid>
+					<Carousel class="sapUiContentPadding" loop="true">
+						<pages>
+							<c:ChartContainerContent icon="sap-icon://line-chart" title="Line Chart">
+								<c:content>
+									<viz:VizFrame height="700px" id="bdoVizFrame" uiConfig="{applicationSet:'fiori'}" width="100%"></viz:VizFrame>
+								</c:content>
+							</c:ChartContainerContent>
+							<c:ChartContainerContent icon="sap-icon://line-chart" title="Bubble Chart">
+								<c:content>
+									<viz:VizFrame height="700px" id="idoVizFrame" uiConfig="{applicationSet:'fiori'}" width="100%"></viz:VizFrame>
+								</c:content>
+							</c:ChartContainerContent>
+						</pages>
+					</Carousel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

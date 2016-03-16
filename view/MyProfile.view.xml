@@ -1,78 +1,48 @@
 <core:View controllerName="Refugee_Book.view.MyProfile" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-	<Page id="homePage" navButtonPress="onNavButtonPress" showNavButton="true" title="Future Car Trends - Decisionator" class="bg">
+	<Page class="bg" id="homePage" navButtonPress="onNavButtonPress" showNavButton="true" title="Future Car Trends - Decisionator">
 		<content>
-		
-		<SearchField width="95%" class="sapUiMediumMargin"  />
+			<Panel>
+								<Switch type="AcceptReject" state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch> <Image src="img/01.jpg" width="100px"/>
 
-			<!--<Image class="img" densityAware="false" src="./img/refugee_book.png" width="30%">-->
-			<!--	<layoutData>-->
-			<!--		<FlexItemData growFactor="1"/>-->
-			<!--	</layoutData>-->
-			<!--</Image>-->
-		
-	<Panel expandable="true" expanded="false" headerText="Last Customer Group" width="auto" class="sapUiResponsiveMargin">
-		<content>
-			<!--<l:Grid class="sapUiSmallMarginTop" hSpacing="2" defaultSpan="L6 M6 S10">-->
-					
-					
-						<Table id="idProductsTable"
-		inset="false"
-		items="{
-			path: '/ProductCollection',
-			sorter: {
-				path: 'Name'
-			}
-		}">
-		<headerToolbar>
-			<Toolbar>
-				<Title text="Products" level="H2"/>
-			</Toolbar>
-		</headerToolbar>
-		<columns>
-			<Column
-				width="12em">
-				<Text text="Product" />
-			</Column>
-			<Column
-				minScreenWidth="Tablet"
-				demandPopin="true">
-				<Text text="Supplier" />
-			</Column>
-			<Column
-				minScreenWidth="Tablet"
-				demandPopin="true"
-				hAlign="Right">
-				<Text text="Dimensions" />
-			</Column>
-			<Column
-				minScreenWidth="Tablet"
-				demandPopin="true"
-				hAlign="Center">
-				<Text text="Weight" />
-			</Column>
-			<Column
-				hAlign="Right">
-				<Text text="Price" />
-			</Column>
-		</columns>
-		<items>
-			<ColumnListItem>
-				<cells>
-					<Image src="{ProductPicUrl}"/>
-					<ObjectIdentifier
-						title="{Name}"/>
-					<Text
-						text="{Description}" />
-					<Text
-						text="{WeightMeasure}" />
-					
-				</cells>
-			</ColumnListItem>
-		</items>
-	</Table>
-					
-					
+			</Panel>
+			
+						<!--<l:Grid class="sapUiSmallMarginTop" hSpacing="2" defaultSpan="L6 M6 S10">-->
+			<Table id="idProductsTable" inset="false" items="{ path: '/ProductCollection', sorter: { path: 'Name' } }">
+				<headerToolbar>
+					<Toolbar>
+						<Title level="H2" text="Products"/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="12em">
+						<Text text="Image"/>
+					</Column>
+					<Column demandPopin="true" minScreenWidth="Tablet">
+						<Text text="Name"/>
+					</Column>
+					<Column class="DecriptonTable" demandPopin="true" hAlign="Right" minScreenWidth="Tablet">
+						<Text text="Decripton"/>
+					</Column>
+					<Column demandPopin="true" hAlign="Center" minScreenWidth="Tablet">
+						<Text  class="WeightMeasureTable" text="Estimated Usage"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Image src="{ProductPicUrl}" width="100px"/>
+							<ObjectIdentifier title="{Name}"/>
+							<Text class="DecriptonTable" text="{Description}"/>
+							<Text class="WeightMeasureTable" text="{WeightMeasure}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
 		</content>
 	</Page>
 </core:View>

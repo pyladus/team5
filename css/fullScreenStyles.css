@@ -50,8 +50,15 @@ h4 {
        margin: 0.5rem; 
   } 
   
+ .customButton {  
+ 	
+       margin: 0.9rem;
+       text-align: center;
+  } 
 .customTileSize div {
 	font-size: 30px !important;
 }
+
+
 
 /* Background Reference: http://www.thetahealing-muenchen.com/helping-hand.jpg*/
