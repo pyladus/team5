@@ -115,10 +115,6 @@ h4 {
     border: none;
     outline: none;
 }
-.sapMBtn {
-    width: 275px;
-    height: 200px !important;
-}
 
 .sapUiSizeCompact .sapMBtnInner.sapMBtnText {
 	background-image: none;
@@ -136,5 +132,122 @@ padding-right : 100px;
 padding-left : 50px;
 }
 
+
+.myCustomTile {  
+       margin: 0.5rem; 
+  } 
+  
+.customButton {  
+ 	
+       margin: 0.9rem;
+       text-align: center;
+  } 
+  
+.customTileSize div {
+	font-size: 30px !important;
+}
+.bgStyle {
+    background: url('../img/007.png') no-repeat center bottom;
+    position: relative;
+    background-size: 80% 80%;
+}
+.bgStyle .team5Panel {
+    position: absolute;
+    bottom: 50px;
+}
+.team5Panel .sapMPanelContent {
+    width: 30%;
+    margin: 10px auto;
+}
+.bordersForLabels {
+    border-style: solid;
+    border-width: 2px;
+}
+.topright {
+    position: absolute;
+    top: 8px;
+    font-size: 36px;
+    text-align: right;
+}
+.topleft {
+    position: absolute;
+    top: 8px;
+    font-size: 36px;
+    text-align: left;
+}
+.box div span {
+  background: #abbdc9;
+  background-image: -webkit-linear-gradient(top, #abbdc9, #abbdc9);
+  background-image: -moz-linear-gradient(top, #abbdc9, #abbdc9);
+  background-image: -ms-linear-gradient(top, #abbdc9, #abbdc9);
+  background-image: -o-linear-gradient(top, #abbdc9, #abbdc9);
+  background-image: linear-gradient(to bottom, #abbdc9, #abbdc9);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.box div {
+    background-color: transparent !important;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.customPerson {
+    width: 275px;
+    height: 200px !important;
+}
+
+.sapUiSizeCompact .sapMBtnInner.sapMBtnText {
+	background-image: none;
+}
+
+.customPersonDiv {
+
+	 align-self: flex-end;
+}
+
+.myButton {
+	-moz-box-shadow: 0px 0px 0px 0px #276873;
+	-webkit-box-shadow: 0px 0px 0px 0px #276873;
+	box-shadow: 0px 0px 0px 0px #276873;
+	background-color:#599bb3;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:31px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.box:hover div span {
+  background: #8496a1;
+
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
 
 /* Background Reference: http://www.thetahealing-muenchen.com/helping-hand.jpg*/
