@@ -6,7 +6,10 @@ sap.ui.controller("Refugee_Book.view.Person", {
 		onNavButtonPress: function() {
 		window.history.go(-1);
 		},
-			 
+		onPress: function() {
+		sap.ui.core.UIComponent.getRouterFor(this).navTo("MyProfile");
+			
+		},
 		handleLogoffPress: function(oEvent) {
 			sap.m.MessageToast.show("Logoff Button Pressed");
 		},
