@@ -7,68 +7,109 @@
 ],
 						
 	"interests": [
-		{
-		  "name": "art",
+			{
+		  "name": "Internet of Things",
 		  "interests": [
-				{"name": "painting"},
-				{"name": "stone curving"},
-				{"name": "sculpturing"}
+				{"name": "Cars"},
+				{"name": "Bikes"},
+				{"name": "Mobiles"},
+				{"name": "Laptops"}]
+		},
+		
+		{
+		  "name": "Art",
+		  "interests": [
+				{"name": "Painting"},
+				{"name": "Stone curving"},
+				{"name": "Sculpturing"}
 				]
 		},
 			{
-		  "name": "music",
+		  "name": "Music",
 		  "interests": [
-				{"name": "pop"},
-				{"name": "rock"},
-				{"name": "classics"}]
+				{"name": "Pop"},
+				{"name": "Rock"},
+				{"name": "Classic"}]
+		},
+		{
+		  "name": "Urbanization",
+		  "interests": [
+				{"name": "Events"},
+				{"name": "Socializaing"},
+				{"name": "Partying"}]
+		},
+		{
+		  "name": "Travelling",
+		  "interests": [
+				{"name": "Photography"},
+				{"name": "Sightseeing"}]
+		},
+		{
+		  "name": "Designing",
+		  "interests": [
+				{"name": "Gadgets"},
+				{"name": "Furniture"},
+				{"name": "Shoes"}]
 		},
 			{
-		  "name": "sports",
+		  "name": "Sports",
 		  "interests": [
-				{"name": "hiking"},
-				{"name": "jogging"},
-				{"name": "crossgolfing"}]
+				{"name": "Hiking"},
+				{"name": "Jogging"},
+				{"name": "Crossgolfing"}]
 		},
 			{
-		  "name": "shopping",
+		  "name": "Shopping",
 		  "interests": [
-				{"name": "clothinhg"},
-				{"name": "furniture"},
-				{"name": "electronics"}]
+				{"name": "Clothinhg"},
+				{"name": "Furniture"},
+				{"name": "Electronics"}]
 		}
 		],
 
 						
 	"disinterests": [
-		{
-		  "name": "art",
+			{
+		  "name": "Internet of Things",
 		  "interests": [
-				{"name": "painting"},
-				{"name": "stone curving"},
-				{"name": "sculpturing"}
+			
+				]
+		},
+		{
+		  "name": "Art",
+		  "interests": [
+			
 				]
 		},
 			{
-		  "name": "music",
+		  "name": "Music",
 		  "interests": [
-				{"name": "pop"},
-				{"name": "rock"},
-				{"name": "classics"}]
+			]
+		},
+		{
+		  "name": "Urbanization",
+		  "interests": [
+				]
+		},
+		{
+		  "name": "Travelling",
+		  "interests": [
+				]
+		},
+		{
+		  "name": "Designing",
+		  "interests": [
+			]
 		},
 			{
-		  "name": "sports",
+		  "name": "Sports",
 		  "interests": [
-				{"name": "hiking"},
-				{"name": "jogging"},
-				{"name": "crossgolfing"}]
+			]
 		},
 			{
-		  "name": "shopping",
+		  "name": "Shopping",
 		  "interests": [
-				{"name": "clothinhg"},
-				{"name": "furniture"},
-				{"name": "electronics"}]
-		}
+			]		}
 		],		
 		
 
@@ -88,6 +129,10 @@
 							}
 						,
 							{
+							"name": "Senior Manager"
+							}
+						,
+							{
 							"name": "Employee"
 							},	
 							
@@ -101,7 +146,7 @@
 							"name": "Prof."
 						},
 						{
-							"name": "Ph.d."
+							"name": "Ph.D."
 						},
 							{
 							"name": "Master"
