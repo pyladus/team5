@@ -142,6 +142,8 @@
                     <m:Toolbar>
                         <m:Title text="Dislikes"/>
                         <m:ToolbarSpacer/>
+                        <m:Button text="Collapse all" press="onCollapseAll"/>
+                        <m:Button text="Expand first level" press="onExpandFirstLevel"/>
                     </m:Toolbar>
                 </toolbar>
                 <columns>

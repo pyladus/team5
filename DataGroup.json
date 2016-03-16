@@ -37,22 +37,41 @@
 				{"name": "electronics"}]
 		}
 		],
-		
-		
-		"disinterests": [
+
+						
+	"disinterests": [
 		{
-		  "name": "art"
+		  "name": "art",
+		  "interests": [
+				{"name": "painting"},
+				{"name": "stone curving"},
+				{"name": "sculpturing"}
+				]
 		},
 			{
-		  "name": "music"
+		  "name": "music",
+		  "interests": [
+				{"name": "pop"},
+				{"name": "rock"},
+				{"name": "classics"}]
 		},
 			{
-		  "name": "sports"
+		  "name": "sports",
+		  "interests": [
+				{"name": "hiking"},
+				{"name": "jogging"},
+				{"name": "crossgolfing"}]
 		},
 			{
-		  "name": "shopping"
+		  "name": "shopping",
+		  "interests": [
+				{"name": "clothinhg"},
+				{"name": "furniture"},
+				{"name": "electronics"}]
 		}
-		],
+		],		
+		
+
 		
 		"positions" : [
 						{
