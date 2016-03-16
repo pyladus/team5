@@ -1,115 +1,78 @@
 <core:View controllerName="Refugee_Book.view.MyProfile" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-	<Page title="My Profile" navButtonPress="onNavBack" showNavButton="true" >
+	<Page id="homePage" navButtonPress="onNavButtonPress" showNavButton="true" title="Future Car Trends - Decisionator" class="bg">
+		<content>
+		
+		<SearchField width="95%" class="sapUiMediumMargin"  />
+
+			<!--<Image class="img" densityAware="false" src="./img/refugee_book.png" width="30%">-->
+			<!--	<layoutData>-->
+			<!--		<FlexItemData growFactor="1"/>-->
+			<!--	</layoutData>-->
+			<!--</Image>-->
+		
+	<Panel expandable="true" expanded="false" headerText="Last Customer Group" width="auto" class="sapUiResponsiveMargin">
 		<content>
 			<!--<l:Grid class="sapUiSmallMarginTop" hSpacing="2" defaultSpan="L6 M6 S10">-->
-					<l:Grid binding="{/ProfileInfosCollection}" class="sapUiSmallMarginTop" defaultSpan="L6 M6 S10" hSpacing="2">
-						<l:content>
-							<Image src="{0/ContactPicUrl}" width="100%" >
-								
-								<layoutData>
-									<l:GridData linebreakL="true" linebreakM="true" linebreakS="true" span="L6 M6 S6"/>
-								</layoutData>
-							</Image>
-							<VBox>
-								<ObjectHeader title="{0/Name}">
-									<attributes>
-										<ObjectAttribute text="{0/Job}"/>
-										<ObjectAttribute text="import data from"/>
-									</attributes>
-								</ObjectHeader>
-							</VBox>
-						</l:content>
-					</l:Grid>
-					<html:h4 class="Certificates">Certificates</html:h4>
-					<l:Grid binding="{/ProfileCertificatesCollection}" class="sapUiSmallMarginTop" defaultSpan="L6 M6 S10" hSpacing="2">
-						<l:content>
-							<Image src="{0/ContactPicUrl}" width="100%">
-								<layoutData>
-									<l:GridData linebreakL="true" linebreakM="true" linebreakS="true" span="L3 M3 S8"/>
-								</layoutData>
-							</Image>
-							<VBox>
-								<ObjectHeader title="{0/CertificateTitle}">
-									<attributes>
-										<ObjectAttribute text="{0/Description}"/>
-										<ObjectAttribute text="{0/Points}"/>
-									</attributes>
-								</ObjectHeader>
-							</VBox>
-						</l:content>
-					</l:Grid>
-					<html:h4>Experience</html:h4>
-					<l:Grid binding="{/ExperienceCollection}" class="sapUiSmallMarginTop" defaultSpan="L6 M6 S10" hSpacing="2">
-						<l:content>
-							<VBox>
-								<Text text="{0/Date}"/>
-							</VBox>
-							<VBox>
-								<Text text="{0/Experience}"/>
-							</VBox>
-							<VBox>
-								<Text text="{1/Date}"/>
-							</VBox>
-							<VBox>
-								<Text text="{1/Experience}"/>
-							</VBox>
-							<VBox>
-								<Text text="{2/Date}"/>
-							</VBox>
-							<VBox>
-								<Text text="{2/Experience}"/>
-							</VBox>
-						</l:content>
-					</l:Grid>
-					<html:h4>Job Recommedation</html:h4>
-					<l:Grid binding="{/RecommedationInfosCollection}" class="sapUiSmallMarginTop" defaultSpan="L6 M6 S10" hSpacing="2">
-						<l:content>
-						<Image src="{0/ContactPicUrl}" width="100%">
-						<layoutData>
-							<l:GridData linebreakL="true" linebreakM="true" linebreakS="true" span="L3 M3 S8"/>
-						</layoutData>
-					</Image>
-					<VBox>
-						<ObjectHeader title="{0/CompanyName}">
-							<attributes>
-								<ObjectAttribute text="{0/CompanyMessage}"/>
-							</attributes>
-						</ObjectHeader>
-						<Button class="margin-left" press="onPress" text="Job details"/>
-					</VBox>
-							
-							<Image src="{1/ContactPicUrl}" width="100%">
-						<layoutData>
-							<l:GridData linebreakL="true" linebreakM="true" linebreakS="true" span="L3 M3 S8"/>
-						</layoutData>
-					</Image>
-					<VBox>
-						<ObjectHeader title="{1/CompanyName}">
-							<attributes>
-								<ObjectAttribute text="{1/CompanyMessage}"/>
-							</attributes>
-						</ObjectHeader>
-						<Button class="margin-left" press="onPress" text="Job details"/>
-					</VBox>
 					
 					
-							<Image src="{2/ContactPicUrl}" width="100%">
-						<layoutData>
-							<l:GridData linebreakL="true" linebreakM="true" linebreakS="true" span="L3 M3 S8"/>
-						</layoutData>
-					</Image>
-					<VBox>
-						<ObjectHeader title="{2/CompanyName}">
-							<attributes>
-								<ObjectAttribute text="{2/CompanyMessage}"/>
-							</attributes>
-						</ObjectHeader>
-						<Button class="margin-left" press="onPress" text="Job details"/>
-					</VBox>
+						<Table id="idProductsTable"
+		inset="false"
+		items="{
+			path: '/ProductCollection',
+			sorter: {
+				path: 'Name'
+			}
+		}">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Products" level="H2"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Product" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Supplier" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				hAlign="Right">
+				<Text text="Dimensions" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				hAlign="Center">
+				<Text text="Weight" />
+			</Column>
+			<Column
+				hAlign="Right">
+				<Text text="Price" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Image src="{ProductPicUrl}"/>
+					<ObjectIdentifier
+						title="{Name}"/>
+					<Text
+						text="{Description}" />
+					<Text
+						text="{WeightMeasure}" />
 					
-						</l:content>
-					</l:Grid>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+					
+					
 		</content>
 	</Page>
 </core:View>
