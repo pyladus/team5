@@ -1,246 +1,173 @@
-<mvc:View
-	controllerName="Refugee_Book.view.Master"
-	xmlns:l="sap.ui.layout"
-	xmlns:u="sap.ui.unified"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m"
-	class="viewPadding">
-		<u:Shell
-			id="myShell"
-			icon="{/logo}">
-			<u:headItems>
-				<u:ShellHeadItem
-					tooltip="Configuration"
-					icon="sap-icon://menu2"
-					press="handlePressConfiguration" />
-				<u:ShellHeadItem
-					tooltip="Home"
-					icon="sap-icon://home"
-					visible="false"
-					press="handlePressHome" />
-			</u:headItems>
-			<u:headEndItems>
-				<u:ShellHeadItem
-					icon="sap-icon://log"
-					tooltip="Logoff"
-					press="handleLogoffPress" />
-			</u:headEndItems>
-			<u:user>
-				<u:ShellHeadUserItem
-					image="sap-icon://person-placeholder"
-					username="Karl Mustermann"
-					press="handleUserItemPressed" />
-			</u:user>
-			<u:search>
-				
-				<SearchField
-					search="handleSearchPressed"/>
-			</u:search>
-			<u:paneContent>
-				<Text text="Lorem ipsum" />
-			</u:paneContent>
-		</u:Shell>
-			<Page id="homePage" navButtonPress="onNavButtonPress" showNavButton="true" title="Future Car Trends - Decisionator" class="bg">
+<mvc:View class="viewPadding" controllerName="Refugee_Book.view.Master" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:u="sap.ui.unified" xmlns="sap.m">
+	<u:Shell icon="{/logo}" id="myShell">
+		<u:headItems>
+			<u:ShellHeadItem icon="sap-icon://menu2" press="handlePressConfiguration" tooltip="Search"/>
+			<u:ShellHeadItem icon="sap-icon://home" press="handlePressHome" tooltip="" visible="false"/>
+		</u:headItems>
+		<u:headEndItems>
+			<u:ShellHeadItem icon="sap-icon://log" press="handleLogoffPress" tooltip="Logoff"/>
+		</u:headEndItems>
+		<u:user>
+			<u:ShellHeadUserItem image="sap-icon://person-placeholder" press="handleUserItemPressed" username="Karl Mustermann"/>
+		</u:user>
+		<u:search>
+			<SearchField search="handleSearchPressed"/>
+		</u:search>
+		<u:paneContent>
+			<Text text="Lorem ipsum"/>
+		</u:paneContent>
+	</u:Shell>
+	<Page class="bg" id="homePage" navButtonPress="onNavButtonPress" showNavButton="true" title="Future Car Trends - Decisionator">
 		<content>
-		
-		<!--<SearchField width="95%" class="sapUiMediumMargin"  />-->
-
+			<!--<SearchField width="95%" class="sapUiMediumMargin"  />-->
 			<!--<Image class="img" densityAware="false" src="./img/refugee_book.png" width="30%">-->
 			<!--	<layoutData>-->
 			<!--		<FlexItemData growFactor="1"/>-->
 			<!--	</layoutData>-->
 			<!--</Image>-->
-		<!--<Panel width="auto" class="sapUiMediumMargin" hAlign="center">-->
-				<FlexBox
-					height="100px"
-					alignItems="Center"
-					justifyContent="Center">
-				<Button text="" 
-						press="onPress" icon="sap-icon://add"
-						ariaDescribedBy="defaultButtonDescription genericButtonDescription">
-
-				</Button>
-				</FlexBox>
-		<!--</FlexBox>-->
-		<!--</Panel>-->
-
-	<Panel expandable="true" expanded="false" headerText="Last Customer Group" width="auto" class="sapUiResponsiveMargin">
-	<content>
-	<!--<Carousel class="sapUiContentPadding" loop="true">-->
-
-	<GenericTile header="Customer Group 1" subheader="Inc 20.000 - 30.000" class="myCustomTile" size="S" frameType="OneByOne"
-		press="press">
-		<tileContent>
-			<TileContent unit="2016/03/24" size="S">
+			<!--<Panel width="auto" class="sapUiMediumMargin" hAlign="center">-->
+			<FlexBox alignItems="Center" height="100px" justifyContent="Center">
+				<Button ariaDescribedBy="defaultButtonDescription genericButtonDescription" icon="sap-icon://add" press="onPress" text=""></Button>
+			</FlexBox>
+			<!--</FlexBox>-->
+			<!--</Panel>-->
+			<Panel class="sapUiResponsiveMargin" expandable="true" expanded="false" headerText="Last Search Groups" width="auto">
 				<content>
-					<NumericContent value="20-50"  size="S"  scale="Y"  
-						 truncateValueTo="14"
-						width="100%" 	icon="sap-icon://employee" />
+					<!--<Carousel class="sapUiContentPadding" loop="true">-->
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Retires" press="press" size="S" subheader="Inc 20.000 - 30.000">
+						<tileContent>
+							<TileContent size="S" unit="2016/03/24">
+								<content>
+									<NumericContent icon="sap-icon://employee" scale="Y" size="S" truncateValueTo="14" value="60+" width="100%"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Family guys" press="press" size="S" subheader="Inc 1000 - 2000">
+						<tileContent>
+							<TileContent size="S" unit="2016/03/24">
+								<content>
+									<NumericContent icon="sap-icon://employee" scale="Y" size="S" truncateValueTo="14" value="20-40"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Sport lovers" press="press" size="S" subheader="Inc 50.000 - 99.000">
+						<tileContent>
+							<TileContent size="S" unit="2016/03/22">
+								<content>
+									<NumericContent icon="sap-icon://employee" scale="Y" size="S" truncateValueTo="14" value="18-20"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Travelers" press="press" size="S" subheader="Inc 2.000 - 3.000"
+						truncateValueTo="14">
+						<tileContent>
+							<TileContent size="S" unit="2016/03/20">
+								<content>
+									<NumericContent icon="sap-icon://employee" scale="Y" size="S" value="25-60"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Young drivers" press="press" size="S" subheader="Inc 25.000 - 30.000"
+						truncateValueTo="14">
+						<tileContent>
+							<TileContent size="S" unit="2016/03/20">
+								<content>
+									<NumericContent icon="sap-icon://employee" scale="Y" size="S" value="18-22"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<!--</Carousel>	-->
 				</content>
-			</TileContent>
-		</tileContent>
-	</GenericTile>
-	 
-	<GenericTile header="Customer Group 2" subheader="Inc 1000 - 2000" class="myCustomTile"  size="S" frameType="OneByOne"
-		press="press">
-
-		<tileContent>		
-			<TileContent unit="2016/03/24" size="S">
+			</Panel>
+			<Panel class="sapUiResponsiveMargin" expandable="true" expanded="false" headerText="Last Trends" width="auto">
 				<content>
-					<NumericContent size="S" value="20-40"  scale="Y"  truncateValueTo="14" icon="sap-icon://employee" />
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Sport" press="press" size="S">
+						<tileContent>
+							<TileContent size="S" unit="2016/03/24">
+								<content>
+									<NumericContent indicator="Up" scale="%" size="S" value="90" valueColor="Good"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Prestige" press="press" size="S">
+						<tileContent>
+							<TileContent size="S" unit="2016/05/24">
+								<content>
+									<NumericContent indicator="Up" scale="%" size="S" value="35" valueColor="Good"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="IoT" press="press" size="S">
+						<tileContent>
+							<TileContent size="S" unit="2016/03/24">
+								<content>
+									<NumericContent indicator="Up" scale="%" size="S" value="90" valueColor="Good"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Design" press="press" size="S">
+						<tileContent>
+							<TileContent size="S" unit="2016/03/24">
+								<content>
+									<NumericContent indicator="Up" scale="%" size="S" value="90" valueColor="Good"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
 				</content>
-			</TileContent>
-		</tileContent>
-	</GenericTile>
-	<GenericTile header="Customer Group 3" subheader="Inc 50.000 - 99.000" class="myCustomTile" size="S" frameType="OneByOne"
-		press="press">
-		<tileContent>
-			<TileContent unit="2016/03/22" size="S">
+			</Panel>
+			<Panel class="sapUiResponsiveMargin" expandable="true" expanded="false" headerText="Saved Groups" width="auto">
 				<content>
-					<NumericContent size="S" value="18-20"  scale="Y"  truncateValueTo="14" icon="sap-icon://employee" />
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Sport lovers" press="press" size="S" subheader="Inc 20.000 - 30.000">
+						<tileContent>
+							<TileContent size="S" unit="2016/03/24">
+								<content>
+									<NumericContent icon="sap-icon://employee" size="S" truncateValueTo="14" value="18-20" width="100%"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Urban customers" press="press" size="S" subheader="Inc 2.000 - 3.000">
+						<tileContent>
+							<TileContent size="S" unit="2016/03/24">
+								<content>
+									<NumericContent icon="sap-icon://employee" scale="Y" size="S" truncateValueTo="14" value="20-40"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Travelers" press="press" size="S" subheader="Inc 400 - 800">
+						<tileContent>
+							<TileContent size="S" unit="2016/03/22">
+								<content>
+									<NumericContent icon="sap-icon://employee" scale="Y" size="S" truncateValueTo="14" value="25-60"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
 				</content>
-			</TileContent>
-		</tileContent>
-	</GenericTile>
-	 
-	<GenericTile header="Customer Group 4"  subheader="Inc 2.000 - 3.000" class="myCustomTile" truncateValueTo="14" size="S" frameType="OneByOne"
-		press="press">
-		<tileContent>
-			<TileContent unit="2016/03/20" size="S">
-				<content>
-					<NumericContent size="S" value="60"  scale="Y"  icon="sap-icon://employee" />	
-				</content>
-			</TileContent>
-		</tileContent>
-	</GenericTile>
-	<GenericTile header="Customer Group 5" subheader="Inc 25.000 - 30.000" class="myCustomTile" truncateValueTo="14" size="S" frameType="OneByOne"
-		press="press">
-		<tileContent>
-			<TileContent unit="2016/03/20" size="S">
-				<content>
-					<NumericContent size="S" value="50-89"  scale="Y"  icon="sap-icon://employee" />
-				</content>
-			</TileContent>
-		</tileContent>
-	</GenericTile>
-	 
-	<GenericTile header="Customer Group 6" subheader="Inc 10.000 - 30.000" class="myCustomTile"  truncateValueTo="14"  size="S" frameType="OneByOne"
-		press="press">
-		<tileContent>
-			<TileContent unit="2016/03/19" size="S">
-				<content>
-					<NumericContent size="S" value="30"   scale="Y"  truncateValueTo="14"  icon="sap-icon://employee" />
-				</content>
-			</TileContent>
-		</tileContent>
-	</GenericTile>
-	<!--</Carousel>	-->
-	</content>
-	</Panel>
-	<Panel expandable="true" expanded="false" headerText="Last Trends" width="auto" class="sapUiResponsiveMargin">
-		<content>
-			<GenericTile header="Color Group1" class="myCustomTile" size="S" frameType="OneByOne"
-				press="press">
-				<tileContent>
-					<TileContent unit="2016/03/24" size="S">
-						<content>
-							<NumericContent size="S" scale="%" value="90"
-								valueColor="Good" indicator="Up" />
-						</content>
-					</TileContent>
-				</tileContent>
-			</GenericTile>
-			 
-			<GenericTile header="Functions Group2"  class="myCustomTile"  size="S" frameType="OneByOne"
-				press="press">
-				<tileContent>
-					<TileContent unit="2016/05/24" size="S">
-						<content>
-							<NumericContent size="S" scale="%" value="35"
-								valueColor="Good" indicator="Up" />
-						</content>
-					</TileContent>
-				</tileContent>
-			</GenericTile>
-		</content>
-	</Panel>
-	
-	<Panel expandable="true" expanded="false" headerText="Saved Groups" width="auto" class="sapUiResponsiveMargin">
-		
-	<content>
-
-
-	<GenericTile header="Hans Peter" subheader="Inc 20.000 - 30.000" class="myCustomTile" size="S" frameType="OneByOne"
-		press="press">
-		<tileContent>
-			<TileContent unit="2016/03/24" size="S">
-				<content>
-					<NumericContent value="20-50"  size="S"
-						 truncateValueTo="14"
-						width="100%" 	icon="sap-icon://employee" />
-				</content>
-			</TileContent>
-		</tileContent>
-	</GenericTile>
-	 
-	<GenericTile header="Kevin Mustermann"  subheader="Inc 2.000 - 3.000"  class="myCustomTile"  size="S" frameType="OneByOne"
-		press="press">
-
-		<tileContent>		
-			<TileContent unit="2016/03/24" size="S">
-				<content>
-					<NumericContent size="S" value="20-40"  scale="Y"  truncateValueTo="14" icon="sap-icon://employee" />
-				</content>
-			</TileContent>
-		</tileContent>
-	</GenericTile>
-	<GenericTile header="May Meyer" class="myCustomTile"  subheader="Inc 400 - 800" size="S" frameType="OneByOne"
-		press="press">
-		<tileContent>
-			<TileContent unit="2016/03/22" size="S">
-				<content>
-					<NumericContent size="S" value="18-20"  scale="Y"  truncateValueTo="14" icon="sap-icon://employee" />
-				</content>
-			</TileContent>
-		</tileContent>
-	</GenericTile>
-	 
-	<GenericTile header="John Doe"  class="myCustomTile"  subheader="Inc 50.000 - 80.000"  truncateValueTo="14" size="S" frameType="OneByOne"
-		press="press">
-		<tileContent>
-			<TileContent unit="2016/03/20" size="S">
-				<content>
-					<NumericContent size="S" value="60"  scale="Y"  icon="sap-icon://employee" />	
-				</content>
-			</TileContent>
-		</tileContent>
-	</GenericTile>
-	<GenericTile header="Sportspeople"  subheader="Inc 10.000 - 30.000"  class="myCustomTile" truncateValueTo="14" size="S" frameType="OneByOne"
-		press="press">
-		<tileContent>
-			<TileContent unit="2016/03/20" size="S">
-				<content>
-					<NumericContent size="S" value="50-89" icon="sap-icon://employee" />
-				</content>
-			</TileContent>
-		</tileContent>
-	</GenericTile>
-
-		</content>
-		<!--<content>-->
-		<!--	<Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />-->
-		<!--</content>-->
-	</Panel>
+				<!--<content>-->
+				<!--	<Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />-->
+				<!--</content>-->
+			</Panel>
 			<!--<TileContainer height="50%" id="container" tileDelete="handleTileDelete">-->
 			<!--	<StandardTile class="tile-css" icon="sap-icon://account" id="myprofile" info="View/update profile" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"-->
 			<!--		press="main_page_nav" title="My Profile" type="{type}" />-->
 			<!--	<StandardTile class="tile-css" icon="sap-icon://education" id="courses" info="Browse through courses" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"-->
 			<!--		press="main_page_nav" title="Create Group" type="{type}"/>-->
-				<StandardTile class="tile-css" icon="sap-icon://customer-financial-fact-sheet" id="person" info="Get your Job here" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"
-					press="main_page_nav" title="Saved Groups" type="{type}"/>
-				<StandardTile class="tile-css" icon="sap-icon://account" id="view1" info="View/View1" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"
-					press="main_page_nav" title="Help" type="{type}" />
-			
+			<!--	<StandardTile class="tile-css" icon="sap-icon://customer-financial-fact-sheet" id="jobmarket" info="Get your Job here" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"-->
+			<!--		press="main_page_nav" title="Saved Groups" type="{type}"/>-->
+			<!--	<StandardTile class="tile-css" icon="sap-icon://account" id="group" info="View/View1" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"-->
+			<!--		press="main_page_nav" title="Help" type="{type}" />-->
 			<!--</TileContainer>-->
 		</content>
 		<footer></footer>

@@ -168,9 +168,9 @@
 <m:footer>
 			<m:Toolbar>
 				<m:ToolbarSpacer/>
-				<m:Button text="Save"	type="Submit" />
+				<m:Button text="Save" 	type="Submit" />
 				<m:Button text="Cancel" type="Reject" />
-				<m:Button text="Submit" type="Accept" />
+				<m:Button text="Submit" press="handlePressMyProfile" type="Accept" />
 			</m:Toolbar>
 		</m:footer>
 
@@ -179,5 +179,5 @@
 	
     	
     
-    </m:Page>
+    </m:Page> 
 </mvc:View>

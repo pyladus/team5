@@ -59,7 +59,7 @@ sap.ui.controller("Refugee_Book.view.Master", {
 
 
 		press : function(evt) {
-		alert("The generic tile is pressed.");
+				sap.ui.core.UIComponent.getRouterFor(this).navTo("MyProfile");
 		},
  
 		handleLogoffPress: function(oEvent) {
