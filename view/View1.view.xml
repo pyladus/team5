@@ -35,6 +35,7 @@ xmlns:html="http://www.w3.org/1999/xhtml"
 					press="handleUserItemPressed" />
 			</u:user>
 			<u:search>
+				<m:Text text="Trend Result" />
 			</u:search>
 			<u:paneContent>
 				<m:Text text="Lorem ipsum" />
