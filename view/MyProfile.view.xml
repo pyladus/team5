@@ -7,7 +7,12 @@
 					<layoutData>
 						<FlexItemData growFactor="1" />
 					</layoutData>
-				</Switch> <Image src="img/01.jpg" width="100px"/>
+				</Switch> <Image src="img/facebookRound.png" width="100px"/>
+						<Switch type="AcceptReject" state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch> <Image src="img/flickrRound.png" width="100px"/>
 
 			</Panel>
 			
