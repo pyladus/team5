@@ -1,19 +1,20 @@
-<mvc:View controllerName="team5.controller.View1" xmlns:c="sap.suite.ui.commons" xmlns:html="http://www.w3.org/1999/xhtml"
+<mvc:View controllerName="Refugee_Book.view.view1" xmlns:c="sap.suite.ui.commons" xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:viz="sap.viz.ui5.controls" xmlns="sap.m">
 	<App>
 		<pages>
-			<Page title="{i18n>title}">
+			<Page title="Adaptive Cruise Control (ACC)" navButtonPress="onNavBack" showNavButton="true">
 				<content>
-					<l:Grid class="sapUiSmallMarginTop" defaultSpan="L6 M6 S10" hSpacing="2">
+					<l:Grid class="sapUiSmallMarginTop" defaultSpan="L9 M6 S10" hSpacing="2">
 						<l:content>
-							<Image src="http://upload.wikimedia.org/wikipedia/commons/2/25/George_Washington_as_CIC_of_the_Continental_Army_bust.jpg" width="100%">
+							<Image src="img/acc.PNG" width="100%">
 								<layoutData>
 									<l:GridData linebreakL="true" linebreakM="true" linebreakS="true" span="L3 M3 S8"/>
 								</layoutData>
 							</Image>
 							<VBox>
-								<Text class="nameTitle" text="asdasd asd asda"/>
-								<Text text="asdasdasd"/>
+								
+								<Text class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop" text="Working together with the radar-controlled Front Assist traffic monitoring system, our adaptive cruise control system keeps you a safe distance from the vehicle in front and that makes driving much easier in slow and stop and go traffic. It means you'll be more relaxed and comfortable on long journeys, knowing you have an extra helping hand."/>
+								<Text class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop" text="You pre-set the speed range which you want the Adaptive Cruise Control to brake and accelerate the car within - you can restrict your car's speed to the limit of the road you're on, for example. The safe-distance technology builds on the familiar cruise control system by adding a radar sensor. It immediately detects traffic slowing ahead and automatically reduces your speed to match. If you are driving too close to the car in front, it will warn you in two stages. First, with visual and acoustic signals, and then with a short braking jolt. If necessary, the system will bring your car to a complete stop."/>
 							</VBox>
 						</l:content>
 					</l:Grid>

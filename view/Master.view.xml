@@ -238,8 +238,8 @@
 			<!--		press="main_page_nav" title="Create Group" type="{type}"/>-->
 			<!--	<StandardTile class="tile-css" icon="sap-icon://customer-financial-fact-sheet" id="jobmarket" info="Get your Job here" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"-->
 			<!--		press="main_page_nav" title="Saved Groups" type="{type}"/>-->
-			<!--	<StandardTile class="tile-css" icon="sap-icon://account" id="group" info="View/View1" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"-->
-			<!--		press="main_page_nav" title="Help" type="{type}" />-->
+				<StandardTile class="tile-css" icon="sap-icon://account" id="view1" info="View/View1" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}"
+					press="main_page_nav" title="Help" type="{type}" />
 			
 			<!--</TileContainer>-->
 		</content>

@@ -1,4 +1,3 @@
-
 jQuery.sap.require("sap.ui.model.json.JSONModel");
 
 sap.ui.controller("Refugee_Book.view.Master", {
@@ -37,6 +36,9 @@ sap.ui.controller("Refugee_Book.view.Master", {
 				break;
 			case this.getView().createId("group"):
 				sap.ui.core.UIComponent.getRouterFor(this).navTo("View");
+				break;
+			case this.getView().createId("view1"):
+				sap.ui.core.UIComponent.getRouterFor(this).navTo("View1");
 				break;
 			default:
 				sap.ui.core.UIComponent.getRouterFor(this).navTo("CoursePage");

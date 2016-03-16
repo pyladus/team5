@@ -5,8 +5,10 @@ sap.ui.define([
 ], function(jQuery, Controller, JSONModel) {
 	"use strict";
 
-	return Controller.extend("team5.controller.View1", {
-
+	return Controller.extend("Refugee_Book.view.view1", {
+		onNavBack: function() {
+			window.history.go(-1);
+		},
 		onInit: function() {
 			// set mock model
 			///////////////////////////////////  vizFrame for line chart //////////////////////////////////////////////////////////////////////////
@@ -16,7 +18,7 @@ sap.ui.define([
 			//var oModel_bl = new sap.ui.model.json.JSONModel(oVizFramePath);
 			var oModel_bl = new sap.ui.model.json.JSONModel({
 				"Products": [{
-					"Country": "China",
+					"Country": "09.2015",
 					"Profit": 100,
 					"Forcast": 200,
 					"Target": 20,
@@ -24,7 +26,7 @@ sap.ui.define([
 					"Revenue2": 20,
 					"Revenue3": 512
 				}, {
-					"Country": "Japan",
+					"Country": "10.2015",
 					"Profit": 159,
 					"Forcast": 140,
 					"Target": 150,
@@ -32,7 +34,7 @@ sap.ui.define([
 					"Revenue2": 100,
 					"Revenue3": 303
 				}, {
-					"Country": "India",
+					"Country": "11.2015",
 					"Profit": 129,
 					"Forcast": 120,
 					"Target": 100,
@@ -40,7 +42,7 @@ sap.ui.define([
 					"Revenue2": 222,
 					"Revenue3": 263
 				}, {
-					"Country": "France",
+					"Country": "12.2015",
 					"Profit": 58,
 					"Forcast": 60,
 					"Target": 80,
@@ -48,7 +50,7 @@ sap.ui.define([
 					"Revenue2": 152,
 					"Revenue3": 113
 				}, {
-					"Country": "Austrilia",
+					"Country": "01.2016",
 					"Profit": 149,
 					"Forcast": 120,
 					"Target": 150,
@@ -56,11 +58,11 @@ sap.ui.define([
 					"Revenue2": 292,
 					"Revenue3": 443
 				}, {
-					"Country": "Sweden",
+					"Country": "02.2016",
 					"Profit": 49,
 					"Forcast": 60,
 					"Target": 55,
-					"Revenue": 1449,
+					"Revenue": 149,
 					"Revenue2": 242,
 					"Revenue3": 243
 				}]
@@ -74,7 +76,7 @@ sap.ui.define([
 					group: 1,
 					name: "Revenue",
 					value: "{Revenue}"
-				},{
+				}, {
 					group: 1,
 					name: "Target",
 					value: "{Target}"
@@ -87,6 +89,10 @@ sap.ui.define([
 			oVizFrame.setVizProperties({
 				plotArea: {
 					showGap: true
+				},
+
+				title: {
+					visible: false
 				}
 			});
 			oVizFrame.setDataset(oDataset_bl);
@@ -113,7 +119,7 @@ sap.ui.define([
 
 			var oVizFrameProductModel = new sap.ui.model.json.JSONModel({
 				"businessData": [{
-					"Sales_Month": "April",
+					"Sales_Month": "Germany",
 					"Marital Status": "Married",
 					"Customer Gender": "Female",
 					"Sales_Quarter": "Q1",
@@ -122,7 +128,7 @@ sap.ui.define([
 					"Gross Profit": 321,
 					"Sales Revenue": 120
 				}, {
-					"Sales_Month": "May",
+					"Sales_Month": "France",
 					"Marital Status": "Married",
 					"Customer Gender": "Female",
 					"Sales_Quarter": "Q2",
@@ -131,7 +137,7 @@ sap.ui.define([
 					"Gross Profit": 181.59,
 					"Sales Revenue": 471.49
 				}, {
-					"Sales_Month": "June",
+					"Sales_Month": "UK",
 					"Marital Status": "Married",
 					"Customer Gender": "Female",
 					"Sales_Quarter": "Q3",
@@ -140,7 +146,7 @@ sap.ui.define([
 					"Gross Profit": 124,
 					"Sales Revenue": 349
 				}, {
-					"Sales_Month": "July",
+					"Sales_Month": "US",
 					"Marital Status": "Married",
 					"Customer Gender": "Female",
 					"Sales_Quarter": "Q4",
@@ -149,7 +155,7 @@ sap.ui.define([
 					"Gross Profit": 153.8,
 					"Sales Revenue": 145.9
 				}, {
-					"Sales_Month": "Augst",
+					"Sales_Month": "Italy",
 					"Marital Status": "Married",
 					"Customer Gender": "Male",
 					"Sales_Quarter": "Q1",
@@ -170,9 +176,6 @@ sap.ui.define([
 				}, {
 					name: "Sales_Month",
 					value: "{Sales_Month}"
-				}, {
-					name: "Marital Status",
-					value: "{Marital Status}"
 				}],
 				measures: [{
 					name: "Cost",
@@ -193,6 +196,12 @@ sap.ui.define([
 			});
 			oVizFrameProduct.setDataset(oDataset);
 			oVizFrameProduct.setModel(oVizFrameProductModel);
+
+			oVizFrameProduct.setVizProperties({
+				title: {
+					visible: false
+				}
+			});
 
 			var oFeedPrimaryValues = new sap.viz.ui5.controls.common.feeds.FeedItem({
 				uid: "primaryValues",
@@ -217,7 +226,7 @@ sap.ui.define([
 			var oFeedRegionColor = new sap.viz.ui5.controls.common.feeds.FeedItem({
 				uid: "regionColor",
 				type: "Dimension",
-				values: ["Sales_Month", "Sales_Quarter", "Customer Gender"]
+				values: ["Sales_Month", "Sales_Quarter"]
 			});
 			var oFeedRegionShape = new sap.viz.ui5.controls.common.feeds.FeedItem({
 				uid: "regionShape",
@@ -230,7 +239,7 @@ sap.ui.define([
 			oVizFrameProduct.addFeed(oFeedBubbleWidth);
 			oVizFrameProduct.addFeed(oFeedBubbleHeight);
 			oVizFrameProduct.addFeed(oFeedRegionColor);
-			oVizFrameProduct.addFeed(oFeedRegionShape);
+			//oVizFrameProduct.addFeed(oFeedRegionShape);
 			oVizFrameProduct.setVizType("bubble");
 		}
 	});
