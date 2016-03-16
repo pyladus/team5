@@ -7,7 +7,7 @@ sap.ui.controller("Refugee_Book.view.MyProfile", {
 	 */
 	onInit: function() {
 			var model = new sap.ui.model.json.JSONModel();
-			model.loadData("./data.json", false);
+			model.loadData("./all.json", false);
 			this.getView().setModel(model);
 		},
 		onPress: function() {
@@ -16,8 +16,37 @@ sap.ui.controller("Refugee_Book.view.MyProfile", {
 
 	onNavBack: function() {
 		window.history.go(-1);
+	},
+	
+	filterDataFacebook: function(oControlEvent) {
+		var model= new sap.ui.model.json.JSONModel();
+		if(!oControlEvent.getParameters().state){
+			model.loadData("./facebook.json", false);
+			this.getView().setModel(model);
+		}
+		else{
+			model.loadData("./all.json", false);
+			this.getView().setModel(model);
+		}
+	},
+	
+		filterDataYoutube: function(oControlEvent) {
+		var model= new sap.ui.model.json.JSONModel();
+		if(!oControlEvent.getParameters().state){
+			model.loadData("./youtube.json", false);
+			this.getView().setModel(model);
+		}
+		else{
+			model.loadData("./facebook.json", false);
+			this.getView().setModel(model);
+		}
+	},
+	onNavBack: function() {
+		window.history.go(-1);
+	},
+	test: function() {
+			sap.ui.core.UIComponent.getRouterFor(this).navTo("View1");
 	}
-
 	/**
 	 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 	 * (NOT before the first rendering! onInit() is used for that one!).

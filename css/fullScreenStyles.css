@@ -1,3 +1,8 @@
+.switch{
+	padding-top: 30px!important;
+	padding-right: 10px;
+	padding-left:10px;
+}
 .navTableControlLayout {
     padding: 1rem 2rem 0 2rem;
 }
@@ -117,6 +122,18 @@ h4 {
 
 .sapUiSizeCompact .sapMBtnInner.sapMBtnText {
 	background-image: none;
+}
+
+.padding-Left {
+    padding-left: 2rem;
+}
+.endline
+{
+padding-right : 100px;
+}
+.leftalign
+{
+padding-left : 50px;
 }
 
 

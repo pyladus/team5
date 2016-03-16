@@ -2,22 +2,94 @@
 	xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
 	<Page class="bg" id="homePage" navButtonPress="onNavButtonPress" showNavButton="true" title="Future Car Trends - Decisionator">
 		<content>
-			<Panel>
-								<Switch type="AcceptReject" state="true">
+<Panel>
+				<Switch type="AcceptReject" change="filterDataFacebook" class="switch" state="true">
 					<layoutData>
 						<FlexItemData growFactor="1" />
 					</layoutData>
-				</Switch> <Image src="img/facebookRound.png" width="100px"/>
-						<Switch type="AcceptReject" state="true">
+				</Switch> 
+				<Image src="img/1458131927_46-facebook.png" width="100px"/>
+					
+						<Switch type="AcceptReject" class="switch" state="true">
 					<layoutData>
 						<FlexItemData growFactor="1" />
 					</layoutData>
-				</Switch> <Image src="img/flickrRound.png" width="100px"/>
-
+				</Switch> 
+				<Image src="img/1458131934_43-twitter.png" width="100px"/>
+				<Switch type="AcceptReject" class="switch" change="filterDataYoutube" state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch>  
+				<Image src="img/1458131938_58-youtube.png" width="100px"/>
+					<Switch type="AcceptReject" class="switch"  state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch> 
+				<Image src="img/1458131931_78-instagram.png" width="100px"/>
+					<Switch type="AcceptReject" class="switch" state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch> 
+				<Image src="img/1458131941_80-google-plus.png" width="100px"/>
+					
+									<Switch type="AcceptReject" class="switch" state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch> 
+				<Image src="img/1458131947_73-pinterest.png"  class="endline" width="100px"/>
+					
+					
+				<Switch type="AcceptReject" class="switch" state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch> 
+				<Image src="img/1458132011_79-ebay.png" width="100px"/>
+					
+										<Switch type="AcceptReject" class="switch" state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch> 
+				<Image src="img/1458131969_74-soundcloud.png" width="100px"/>
+					
+										<Switch type="AcceptReject" class="switch" state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch> 
+				<Image src="img/1458132021_social_mastercard_round.png" width="100px"/>
+					
+					<Switch type="AcceptReject" class="switch" state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch> 
+				
+				<Image src="img/1458132026_70-myspace.png" width="100px"/>	
+					<Switch type="AcceptReject" class="switch" state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch> 
+				<Image src="img/1458131957_77-behance.png" width="100px"/>	
+				
+				<Switch type="AcceptReject" class="switch" state="true">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Switch> 
+				<Image src="img/1458132026_70-myspace.png" width="100px"/>	
+				
+	
 			</Panel>
 			
 						<!--<l:Grid class="sapUiSmallMarginTop" hSpacing="2" defaultSpan="L6 M6 S10">-->
-			<Table id="idProductsTable" inset="false" items="{ path: '/ProductCollection', sorter: { path: 'Name' } }">
+			<Table id="idProductsTable" inset="false" items="{ path: '/ProductCollection', sorter: { path: 'Name' } }" select="test" press="test" mode="sap.m.ListMode.SingleSelectMaster">
 				<headerToolbar>
 					<Toolbar>
 						<Title level="H2" text="Products"/>
@@ -38,9 +110,9 @@
 					</Column>
 				</columns>
 				<items>
-					<ColumnListItem>
+					<ColumnListItem press="test">
 						<cells>
-							<Image src="{ProductPicUrl}" width="100px"/>
+							<Image src="{ProductPicUrl}" width="100px" press="test"/>
 							<ObjectIdentifier title="{Name}"/>
 							<Text class="DecriptonTable" text="{Description}"/>
 							<Text class="WeightMeasureTable" text="{WeightMeasure}"/>
