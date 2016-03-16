@@ -62,22 +62,21 @@
 							</TileContent>
 						</tileContent>
 					</GenericTile>
-					<GenericTile class="myCustomTile" frameType="OneByOne" header="Travelers" press="press" size="S" subheader="Inc 2.000 - 3.000"
-						truncateValueTo="14">
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Travelers" truncateValueTo="14" press="press" size="S" subheader="Inc 2.000 - 3.000">
 						<tileContent>
 							<TileContent size="S" unit="2016/03/20">
 								<content>
-									<NumericContent icon="sap-icon://employee" scale="Y" size="S" value="25-60"/>
+									<NumericContent icon="sap-icon://employee" scale="Y" truncateValueTo="14" size="S" value="25-60"/>
 								</content>
 							</TileContent>
 						</tileContent>
 					</GenericTile>
-					<GenericTile class="myCustomTile" frameType="OneByOne" header="Young drivers" press="press" size="S" subheader="Inc 25.000 - 30.000"
-						truncateValueTo="14">
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Young drivers" truncateValueTo="14" press="press" size="S" subheader="Inc 25.000 - 30.000"
+						>
 						<tileContent>
 							<TileContent size="S" unit="2016/03/20">
 								<content>
-									<NumericContent icon="sap-icon://employee" scale="Y" size="S" value="18-22"/>
+									<NumericContent icon="sap-icon://employee" scale="Y" truncateValueTo="14" size="S" value="18-22"/>
 								</content>
 							</TileContent>
 						</tileContent>
@@ -87,7 +86,7 @@
 			</Panel>
 			<Panel class="sapUiResponsiveMargin" expandable="true" expanded="false" headerText="Last Trends" width="auto">
 				<content>
-					<GenericTile class="myCustomTile" frameType="OneByOne" header="Sport" press="press" size="S">
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Sport" press="onPress" size="S">
 						<tileContent>
 							<TileContent size="S" unit="2016/03/24">
 								<content>
@@ -96,7 +95,7 @@
 							</TileContent>
 						</tileContent>
 					</GenericTile>
-					<GenericTile class="myCustomTile" frameType="OneByOne" header="Prestige" press="press" size="S">
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Prestige" press="onPress" size="S">
 						<tileContent>
 							<TileContent size="S" unit="2016/05/24">
 								<content>
@@ -105,7 +104,7 @@
 							</TileContent>
 						</tileContent>
 					</GenericTile>
-					<GenericTile class="myCustomTile" frameType="OneByOne" header="IoT" press="press" size="S">
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="IoT" press="onPress" size="S">
 						<tileContent>
 							<TileContent size="S" unit="2016/03/24">
 								<content>
@@ -114,7 +113,7 @@
 							</TileContent>
 						</tileContent>
 					</GenericTile>
-					<GenericTile class="myCustomTile" frameType="OneByOne" header="Design" press="press" size="S">
+					<GenericTile class="myCustomTile" frameType="OneByOne" header="Design" press="onPress" size="S">
 						<tileContent>
 							<TileContent size="S" unit="2016/03/24">
 								<content>
