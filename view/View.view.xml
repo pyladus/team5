@@ -34,6 +34,7 @@
 					press="handleUserItemPressed" />
 			</u:user>
 			<u:search>
+				<m:Text text="Group Search" />
 			</u:search>
 			<u:paneContent>
 				<m:Text text="Lorem ipsum" />
