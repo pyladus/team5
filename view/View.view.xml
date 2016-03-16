@@ -1,0 +1,181 @@
+<mvc:View
+        controllerName="Refugee_Book.view.Controller"
+        xmlns="sap.ui.table"
+        xmlns:m="sap.m"
+        xmlns:u="sap.ui.unified"
+        xmlns:core="sap.ui.core"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:tnt="sap.tnt"
+        class="viewPadding" >
+	<u:Shell
+			id="myShell"
+			icon="{/logo}">
+			<u:headItems>
+				<u:ShellHeadItem
+					tooltip="Configuration"
+					icon="sap-icon://nav-back"
+					press="onNavButtonPress" />
+				<u:ShellHeadItem
+					tooltip="Home"
+					icon="sap-icon://home"
+					visible="false"
+					press="handlePressHome" />
+			</u:headItems>
+			<u:headEndItems>
+				<u:ShellHeadItem
+					icon="sap-icon://log"
+					tooltip="Logoff"
+					press="handleLogoffPress" />
+			</u:headEndItems>
+			<u:user>
+				<u:ShellHeadUserItem
+					image="sap-icon://person-placeholder"
+					username="Karl Mustermann"
+					press="handleUserItemPressed" />
+			</u:user>
+			<u:search>
+			</u:search>
+			<u:paneContent>
+				<m:Text text="Lorem ipsum" />
+			</u:paneContent>
+		</u:Shell>
+	<m:Page id="homePage2" navButtonPress="onNavButtonPress" showNavButton="true" title="Future Car Trends - Decisionator" class="bg">
+
+    	<m:IconTabBar
+		id="idIconTabBarNoIcons"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+    	
+		<m:items>
+			<m:IconTabFilter
+				text="Personal Information">
+				<m:VBox class="sapUiSmallMargin">
+					<m:Label text="Age:"></m:Label>
+					<m:Input value="" width="134px"/>
+					<m:Label text="Sex:"></m:Label>
+					<m:RadioButtonGroup class="sapUiMediumMarginBottom" columns="2" selectedIndex="0">
+						<m:buttons>
+							<m:RadioButton id="RB2-1" text="male"/>
+							<m:RadioButton id="RB2-2" text="female"/>
+						</m:buttons>
+					</m:RadioButtonGroup>
+					<m:Label text="Marital Status:"/>
+					<m:RadioButtonGroup class="sapUiMediumMarginBottom" columns="3" selectedIndex="0">
+						<m:buttons>
+							<m:RadioButton id="RB22-1" text="single"/>
+							<m:RadioButton id="RB22-2" text="married"/>
+							<m:RadioButton id="RB22-3" text="divorced"/>
+						</m:buttons>
+					</m:RadioButtonGroup>
+					<m:Label text="Number of Children:"></m:Label>
+					<m:Input value="" width="134px"/>
+					<m:Label text="Nationality:"></m:Label>
+					<m:Select forceSelection="false" items="{ path: '/countries', sorter: { path: 'name' } }" selectedKey="1239102">
+						<core:Item text="{name}"/>
+					</m:Select>
+					
+					<m:Label text="Education Level:"></m:Label>
+					<m:Select forceSelection="false" items="{ path: '/education', sorter: { path: 'name' } }" selectedKey="1239102">
+						<core:Item text="{name}"/>
+					</m:Select>
+				</m:VBox>
+			</m:IconTabFilter>
+			
+			<m:IconTabFilter
+				text="Employment">
+			<m:VBox class="sapUiSmallMargin">
+					<m:Label text="Employment Status:"></m:Label>
+					<m:RadioButtonGroup class="sapUiMediumMarginBottom" columns="3" selectedIndex="0">
+						<m:buttons>
+							<m:RadioButton id="RB23-1" text="Yes"/>
+							<m:RadioButton id="RB23-2" text="No"/>
+							<m:RadioButton id="RB23-3" text="Self Independent"/>
+						</m:buttons>
+					</m:RadioButtonGroup>
+					<m:Label text="Monthly Income:"></m:Label>
+					<m:Select forceSelection="false" items="{ path: '/salary_ranges', sorter: { path: 'name' } }" selectedKey="1239102" width="120px">
+						<core:Item text="{name}"/>
+					</m:Select>
+					<m:Label text="Company:"></m:Label>
+					<m:Select forceSelection="false" items="{ path: '/companies', sorter: { path: 'name' } }" selectedKey="1239102" width="120px">
+						<core:Item text="{name}"/>
+					</m:Select>
+					
+					<m:Label text="Position:"></m:Label>
+					<m:Select forceSelection="false" items="{ path: '/positions', sorter: { path: 'name' } }" selectedKey="1239102" width="120px">
+						<core:Item text="{name}"/>
+					</m:Select>
+				</m:VBox>
+			</m:IconTabFilter>
+			<m:IconTabFilter
+				text="Interests">
+			<m:content>
+            <TreeTable
+                    id="TreeTableBasic"
+                    rows="{path:'/interests'}"
+                    selectionMode="MultiToggle"
+                    enableSelectAll="false">
+                <toolbar>
+                    <m:Toolbar>
+                        <m:Title text="Likes"/>
+                        <m:ToolbarSpacer/>
+                        <m:Button text="Collapse all" press="onCollapseAll"/>
+                        <m:Button text="Expand first level" press="onExpandFirstLevel"/>
+                    </m:Toolbar>
+                </toolbar>
+                <columns>
+                    <Column>
+                        <m:Label text="Categories"/>
+                        <template>
+                            <m:Text text="{name}"/>
+                        </template>
+                    </Column>
+                </columns>
+            </TreeTable>
+            
+            <TreeTable
+                    id="TreeTableBasic1"
+                    rows="{path:'/disinterests'}"
+                    selectionMode="MultiToggle"
+                    enableSelectAll="false">
+                <toolbar>
+                    <m:Toolbar>
+                        <m:Title text="Dislikes"/>
+                        <m:ToolbarSpacer/>
+                    </m:Toolbar>
+                </toolbar>
+                <columns>
+                    <Column>
+                        <m:Label text="Categories"/>
+                        <template>
+                            <m:Text text="{name}"/>
+                        </template>
+                    </Column>
+                </columns>
+            </TreeTable>
+        </m:content>
+			</m:IconTabFilter>
+			
+			<m:IconTabFilter
+				text="Others">
+				<m:Text text="Notes go here ..." />
+			</m:IconTabFilter>
+		</m:items>
+	</m:IconTabBar>
+
+<m:footer>
+			<m:Toolbar>
+				<m:ToolbarSpacer/>
+				<m:Button text="Save"	type="Submit" />
+				<m:Button text="Cancel" type="Reject" />
+				<m:Button text="Submit" type="Accept" />
+			</m:Toolbar>
+		</m:footer>
+
+
+
+	
+    	
+    
+    </m:Page>
+</mvc:View>

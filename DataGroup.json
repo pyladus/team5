@@ -1,0 +1,130 @@
+{
+	"countries": [
+		{ "name": "Germany"},
+		{ "name": "USA"},
+		{ "name": "China"},
+		{ "name": "Iran"}
+],
+						
+	"interests": [
+		{
+		  "name": "art",
+		  "interests": [
+				{"name": "painting"},
+				{"name": "stone curving"},
+				{"name": "sculpturing"}
+				]
+		},
+			{
+		  "name": "music",
+		  "interests": [
+				{"name": "pop"},
+				{"name": "rock"},
+				{"name": "classics"}]
+		},
+			{
+		  "name": "sports",
+		  "interests": [
+				{"name": "hiking"},
+				{"name": "jogging"},
+				{"name": "crossgolfing"}]
+		},
+			{
+		  "name": "shopping",
+		  "interests": [
+				{"name": "clothinhg"},
+				{"name": "furniture"},
+				{"name": "electronics"}]
+		}
+		],
+		
+		
+		"disinterests": [
+		{
+		  "name": "art"
+		},
+			{
+		  "name": "music"
+		},
+			{
+		  "name": "sports"
+		},
+			{
+		  "name": "shopping"
+		}
+		],
+		
+		"positions" : [
+						{
+							"name": "CEO"
+						},
+						{
+							"name": "COO"
+						},
+							{
+							"name": "CIO"
+						},
+							{
+							"name": "Manager"
+							}
+						,
+							{
+							"name": "Employee"
+							},	
+							
+							{
+							"name": "Intern"
+							}	
+						],
+						
+						"education": [
+						{
+							"name": "Prof."
+						},
+						{
+							"name": "Ph.d."
+						},
+							{
+							"name": "Master"
+						},
+							{
+							"name": "Bachelor"
+							}
+						,
+							{
+							"name": "School"
+							}	
+						],
+					
+						
+						"companies": [
+						{
+							"name": "SAP SE"
+						},
+						{
+							"name": "Oracle"
+						},
+							{
+							"name": "Microsoft"
+						},
+							{
+							"name": "Google"
+							}
+						],
+						
+						
+						"salary_ranges": [
+						{
+							"name": "1000€ - 1500€"
+						},
+						{
+							"name": "1501€ - 2000€"
+						},
+							{
+							"name": "2001€ - 2500€"
+						},
+							{
+							"name": "2501€ - 3000€"
+							}
+						]
+}
