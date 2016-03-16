@@ -40,6 +40,9 @@ sap.ui.controller("Refugee_Book.view.Master", {
 			case this.getView().createId("view1"):
 				sap.ui.core.UIComponent.getRouterFor(this).navTo("View1");
 				break;
+			case this.getView().createId("person"):
+				sap.ui.core.UIComponent.getRouterFor(this).navTo("Person");
+				break;
 			default:
 				sap.ui.core.UIComponent.getRouterFor(this).navTo("CoursePage");
 

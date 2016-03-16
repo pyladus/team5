@@ -1,0 +1,71 @@
+<core:View controllerName="Refugee_Book.view.Person" xmlns:core="sap.ui.core"
+xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"	
+	xmlns:u="sap.ui.unified"
+	xmlns:m="sap.m"
+	class="viewPadding"
+	>
+	<u:Shell
+			id="myShell"
+			icon="{/logo}">
+			<u:headItems>
+				<u:ShellHeadItem
+					tooltip="Configuration"
+					icon="sap-icon://nav-back"
+					press="onNavButtonPress" />
+				<u:ShellHeadItem
+					tooltip="Home"
+					icon="sap-icon://home"
+					visible="false"
+					press="handlePressHome" />
+			</u:headItems>
+			<u:headEndItems>
+				<u:ShellHeadItem
+					icon="sap-icon://log"
+					tooltip="Logoff"
+					press="handleLogoffPress" />
+			</u:headEndItems>
+			<u:user>
+				<u:ShellHeadUserItem
+					image="sap-icon://person-placeholder"
+					username="Karl Mustermann"
+					press="handleUserItemPressed" />
+			</u:user>
+			<u:search>
+			</u:search>
+			<u:paneContent>
+				<m:Text text="Lorem ipsum" />
+			</u:paneContent>
+		</u:Shell>
+	<Page class="bgStyle" navButtonPress="onNavBack" showNavButton="true" title="Person">
+		<content >
+			<l:VerticalLayout class="sapUiContentPadding topleft">
+				<l:content>
+					<Button class="box" press="onPress" text="IoT"/>
+					<Button class="box" press="onPress" text="Sport"/>
+					<Button class="box" press="onPress" text="Urbanization"/>
+				</l:content>
+			</l:VerticalLayout>
+			<l:VerticalLayout class="sapUiContentPadding topright" width="100%">
+				<l:content>
+					<Button class="box" press="onPress" text="Desgining"/>
+					<Button class="box" press="onPress" text="Prestige"/>
+					<Button class="box" press="onPress" text="Traveling"/>
+				</l:content>
+			</l:VerticalLayout>
+			<Panel backgroundDesign="Transparent" class="team5Panel" width="100%">
+				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+					<l:content>
+						<Label class="sapUiSmallMarginBottom" design="Bold" text="Age: 30 - 35"/>
+						<Label class="sapUiSmallMarginBottom" design="Bold" text="Sex: Male"/>
+						<Label class="sapUiSmallMarginBottom" design="Bold" text="Education: Master"/>
+						<Label class="sapUiSmallMarginBottom" design="Bold" text="Marrital: married"/>
+						<Label class="sapUiSmallMarginBottom" design="Bold" text="Career: Programmer"/>
+						<Label class="sapUiSmallMarginBottom" design="Bold" text="Salary: 15000-20000"/>
+					</l:content>
+				</l:VerticalLayout>
+			</Panel>
+		</content>
+	</Page>
+</core:View>

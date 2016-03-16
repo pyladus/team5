@@ -67,6 +67,10 @@ sap.ui.core.UIComponent.extend("Refugee_Book.Component", {
 				name: "View1",
 					view: "View1",
 					pattern: "/View1"
+				}, {
+				name: "Person",
+					view: "Person",
+					pattern: "/Person"
 				}
 
 			]
