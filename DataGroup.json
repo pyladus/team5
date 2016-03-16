@@ -1,0 +1,194 @@
+{
+	"countries": [
+		{ "name": "Germany"},
+		{ "name": "USA"},
+		{ "name": "China"},
+		{ "name": "Iran"}
+],
+						
+	"interests": [
+			{
+		  "name": "Internet of Things",
+		  "interests": [
+				{"name": "Cars"},
+				{"name": "Bikes"},
+				{"name": "Mobiles"},
+				{"name": "Laptops"}]
+		},
+		
+		{
+		  "name": "Art",
+		  "interests": [
+				{"name": "Painting"},
+				{"name": "Stone curving"},
+				{"name": "Sculpturing"}
+				]
+		},
+			{
+		  "name": "Music",
+		  "interests": [
+				{"name": "Pop"},
+				{"name": "Rock"},
+				{"name": "Classic"}]
+		},
+		{
+		  "name": "Urbanization",
+		  "interests": [
+				{"name": "Events"},
+				{"name": "Socializaing"},
+				{"name": "Partying"}]
+		},
+		{
+		  "name": "Travelling",
+		  "interests": [
+				{"name": "Photography"},
+				{"name": "Sightseeing"}]
+		},
+		{
+		  "name": "Designing",
+		  "interests": [
+				{"name": "Gadgets"},
+				{"name": "Furniture"},
+				{"name": "Shoes"}]
+		},
+			{
+		  "name": "Sports",
+		  "interests": [
+				{"name": "Hiking"},
+				{"name": "Jogging"},
+				{"name": "Crossgolfing"}]
+		},
+			{
+		  "name": "Shopping",
+		  "interests": [
+				{"name": "Clothinhg"},
+				{"name": "Furniture"},
+				{"name": "Electronics"}]
+		}
+		],
+
+						
+	"disinterests": [
+			{
+		  "name": "Internet of Things",
+		  "interests": [
+			
+				]
+		},
+		{
+		  "name": "Art",
+		  "interests": [
+			
+				]
+		},
+			{
+		  "name": "Music",
+		  "interests": [
+			]
+		},
+		{
+		  "name": "Urbanization",
+		  "interests": [
+				]
+		},
+		{
+		  "name": "Travelling",
+		  "interests": [
+				]
+		},
+		{
+		  "name": "Designing",
+		  "interests": [
+			]
+		},
+			{
+		  "name": "Sports",
+		  "interests": [
+			]
+		},
+			{
+		  "name": "Shopping",
+		  "interests": [
+			]		}
+		],		
+		
+
+		
+		"positions" : [
+						{
+							"name": "CEO"
+						},
+						{
+							"name": "COO"
+						},
+							{
+							"name": "CIO"
+						},
+							{
+							"name": "Manager"
+							}
+						,
+							{
+							"name": "Senior Manager"
+							}
+						,
+							{
+							"name": "Employee"
+							},	
+							
+							{
+							"name": "Intern"
+							}	
+						],
+						
+						"education": [
+						{
+							"name": "Prof."
+						},
+						{
+							"name": "Ph.D."
+						},
+							{
+							"name": "Master"
+						},
+							{
+							"name": "Bachelor"
+							}
+						,
+							{
+							"name": "School"
+							}	
+						],
+					
+						
+						"companies": [
+						{
+							"name": "SAP SE"
+						},
+						{
+							"name": "Oracle"
+						},
+							{
+							"name": "Microsoft"
+						},
+							{
+							"name": "Google"
+							}
+						],
+						
+						
+						"salary_ranges": [
+						{
+							"name": "1000€ - 1500€"
+						},
+						{
+							"name": "1501€ - 2000€"
+						},
+							{
+							"name": "2001€ - 2500€"
+						},
+							{
+							"name": "2501€ - 3000€"
+							}
+						]
+}

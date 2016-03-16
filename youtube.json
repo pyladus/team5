@@ -1,0 +1,192 @@
+{
+	"ProductCollection": [
+				{
+			"ProductId": "1239101",
+			"Name": "Radar-controlled Front Assist",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Working together with the radar-controlled Front Assist traffic monitoring system, our adaptive cruise control system keeps you a safe distance from the vehicle in front and that makes driving much easier in slow and stop and go traffic.",
+			"WeightMeasure": "95%",
+			"ProductPicUrl": "img/acc.PNG"
+		},{
+			"ProductId": "1239101",
+			"Name": "Door mirrors, electrically foldable",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Door mirrors, electrically adjustable and foldable, heated, auto dimming on drivers side with surround lighting (must be ordered in conjunction with Winter Pack on all trims, and Winter pack and Convenience Pack on S trims)",
+			"WeightMeasure": "30%",
+			"ProductPicUrl": "img/01.jpg"
+		},
+		{
+			"ProductId": "1239102",
+			"Name": "Heated front seats",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Heated front seats with heated windscreen washer nozzles",
+			"WeightMeasure": "25%",
+			"ProductPicUrl": "img/02.jpg"
+		},
+		{
+			"ProductId": "1239103",
+			"Name": "Panoramic sunroof",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Panoramic sunroof tilt/slide",
+			"WeightMeasure": "19%",
+			"ProductPicUrl": "img/03.jpg"
+		},
+		{
+			"ProductId": "1239104",
+			"Name": "Adaptive Cruise Control (ACC)",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Adaptive Cruise Control (ACC) including Front Assist, radar sensor controlled distance monitoring system. City emergency braking, cruise control including speed limiter",
+			"WeightMeasure": "17.5%",
+			"ProductPicUrl": "img/04.jpg"
+		},
+		{
+			"ProductId": "1239105",
+			"Name": "Multifunction colour display",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Multifunction colour display (with 3.5 TFT display) in instrument cluster",
+			"WeightMeasure": "13%",
+			"ProductPicUrl": "img/05.jpg"
+		},
+		{
+			"ProductId": "1239106",
+			"Name": "Parking sensors, front and rear",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Ultrasonic, audible with optical parking display via vehicle's audio system",
+			"WeightMeasure": "11.5%",
+			"ProductPicUrl": "img/06.jpg"
+		},
+		{
+			"ProductId": "1239107",
+			"Name": "Front fog lights",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Front fog lights with static cornering",
+			"WeightMeasure": "9%",
+			"ProductPicUrl": "img/07.jpg"
+		},
+		{
+			"ProductId": "1239108",
+			"Name": "LED Premium Headlights with LED Daytime Running Lights and dynamic cornering light",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "All LED premium headlights with projection technology. Including dual 'U-shaped' LED daytime running lights. 12 separate LED lights which perform the indicator function. With dynamic curve lighting and headlight washers",
+			"WeightMeasure": "8.7%",
+			"ProductPicUrl": "img/08.jpg"
+		},
+		{
+			"ProductId": "1239109",
+			"Name": "Voice Activation",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Spoken voice commands for telephone and navigation (when fitted) functions",
+			"WeightMeasure": "6%",
+			"ProductPicUrl": "img/09.jpg"
+		},
+		{
+			"ProductId": "1239110",
+			"Name": "Pre-crash preventive occupant protection",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Tensioning of the front seat belts, closing of electric windows, closing of optional panoramic sunroof and preconditioning of brake systems should a critical driving situation be detected. Only in conjunction with ACC or Front Assist.",
+			"WeightMeasure": "5.5%",
+			"ProductPicUrl": "img/10.jpg"
+		},
+		{
+			"ProductId": "1239111",
+			"Name": "Clothes hanger",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "This coat hanger is easily installed on the front head restraints. It is ideal for keeping coats and jackets crease free. It integrates perfectly into the vehicle interior. It is not suitable with sports bucket seats.",
+			"WeightMeasure": "13%",
+			"ProductPicUrl": "img/11.jpg"
+		},
+		{
+			"ProductId": "1239112",
+			"Name": "Compact III Bicycle Carrier",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "This clever carrier uses a super simple quick release system to fit to your towing hitch, enabling you to transport three bicycles with a max weight of 54kg. It is the smallest, lightest and most compact in its class for the towing hitch and even with bicycles attached accessing the boot is easy with the newly developed foot switch.",
+			"WeightMeasure": "16%",
+			"ProductPicUrl": "img/12.jpg"
+		},
+		{
+			"ProductId": "1239113",
+			"Name": "Mudflaps - front",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Long-lasting and durable: the Volkswagen Genuine mud flaps effectively protect the underbody, side rails and doors against excessive dirt. In addition, they also reduce dangerous road chippings and water spray.",
+			"WeightMeasure": "0.35%",
+			"ProductPicUrl": "img/13.jpg"
+		},
+		{
+			"ProductId": "1239114",
+			"Name": "Reversible boot mat",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "The perfectly fitting Volkswagen Genuine reversible mat helps in two ways: its finely woven upper velour surface protects the luggage compartment against dirt, while its plastic studs on the underside prevent cargo from sliding. In addition, the fold-out plastic loading sill protection protects the bumper against damage.",
+			"WeightMeasure": "0.1%",
+			"ProductPicUrl": "img/14.jpg"
+		},
+		{
+			"ProductId": "1239115",
+			"Name": "Roof Bars",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "The Volkswagen Genuine roof bars serve as the ideal base system for all attachments. The aerodynamic aluminium profile roof bars are City Crash Plus tested to Volkswagen's strict standards and can accommodate e.g. a surf board, bicycle, ski and snowboard holder or the practical roof boxes.",
+			"WeightMeasure": "0.75%",
+			"ProductPicUrl": "img/15.jpg"
+		},
+		{
+			"ProductId": "1239116",
+			"Name": "Rubber floor mats - front",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "These durable and long lasting rubber floor mats protect the vehicle interior from dirt and moisture. They are shaped to fit with a non slip underside. Easy to clean. Fastening points prevent slipping and turning for increased safety. Designed for customer fitting.",
+			"WeightMeasure": "0.14%",
+			"ProductPicUrl": "img/16.jpg"
+		},
+		{
+			"ProductId": "1239117",
+			"Name": "Ski and snowboard holder- four skis or two snowboards",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Transport your skis or snowboards securely and effectively with this dedicated carrier. It is designed for mounting onto roof bars and can be locked for added security. The wide opening button design makes operating the ski holder easier when wearing thick gloves.",
+			"WeightMeasure": "1.3%",
+			"ProductPicUrl": "img/17.jpg"
+		},
+		{
+			"ProductId": "1239118",
+			"Name": "Wind deflectors - front",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "The door wind deflectors enable optimal ventilation of the vehicle interior, which contributes to your driving comfort. They improve the interior climate and allow you to enjoy fresh air even when it is raining or snowing. When the sun is shining they prevent unpleasant heat build-up in the vehicle interior when the windows are opened to slightly above the lower edge of the wind deflectors.",
+			"WeightMeasure": "1.1%",
+			"ProductPicUrl": "img/18.jpg"
+		},
+		{
+			"ProductId": "1239119",
+			"Name": "Rubber Boot Mat (saloon)",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Rubber Boot Mat",
+			"WeightMeasure": "0.15%",
+			"ProductPicUrl": "img/19.jpg"
+		},
+		{
+			"ProductId": "1239120",
+			"Name": "Sunblinds, Electric rear & manual side",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Sunblinds, Electric rear amp; manual side. Saloon Only Electrically operated roll-up sunshade on rear window, manually operated roll up sunshields on door windows.",
+			"WeightMeasure": "0.45%",
+			"ProductPicUrl": "img/20.jpg"
+		}
+	]
+}

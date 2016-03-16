@@ -11,7 +11,8 @@ sap.ui.core.UIComponent.extend("Refugee_Book.Component", {
 		"library": "Refugee_Book",
 		"includes": ["css/fullScreenStyles.css"],
 		"dependencies": {
-			"libs": ["sap.m", "sap.ui.layout"],
+			"libs": ["sap.m", "sap.ui.layout", "sap.ui.table",
+                    "sap.ui.unified"],
 			"components": []
 		},
 		"config": {
@@ -58,6 +59,18 @@ sap.ui.core.UIComponent.extend("Refugee_Book.Component", {
 					name: "Congratulations",
 					view: "Congratulations",
 					pattern: "/Congratulations"
+				}, {
+				name: "View",
+					view: "View",
+					pattern: "/View"
+				}, {
+				name: "View1",
+					view: "View1",
+					pattern: "/View1"
+				}, {
+				name: "Person",
+					view: "Person",
+					pattern: "/Person"
 				}
 
 			]
