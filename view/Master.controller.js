@@ -59,7 +59,7 @@ sap.ui.controller("Refugee_Book.view.Master", {
 
 
 		press : function(evt) {
-				sap.ui.core.UIComponent.getRouterFor(this).navTo("MyProfile");
+				sap.ui.core.UIComponent.getRouterFor(this).navTo("Person");
 		},
  
 		handleLogoffPress: function(oEvent) {
