@@ -1,5 +1,45 @@
-<mvc:View controllerName="Refugee_Book.view.view1" xmlns:c="sap.suite.ui.commons" xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:viz="sap.viz.ui5.controls" xmlns="sap.m">
+<mvc:View controllerName="Refugee_Book.view.View1" 
+xmlns:c="sap.suite.ui.commons"
+xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout" 
+	xmlns:m="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:viz="sap.viz.ui5.controls"
+	xmlns="sap.m"
+	xmlns:u="sap.ui.unified"
+	class="viewPadding">
+	<u:Shell
+			id="myShell"
+			icon="{/logo}">
+			<u:headItems>
+				<u:ShellHeadItem
+					tooltip="Configuration"
+					icon="sap-icon://nav-back"
+					press="onNavButtonPress" />
+				<u:ShellHeadItem
+					tooltip="Home"
+					icon="sap-icon://home"
+					visible="false"
+					press="handlePressHome" />
+			</u:headItems>
+			<u:headEndItems>
+				<u:ShellHeadItem
+					icon="sap-icon://log"
+					tooltip="Logoff"
+					press="handleLogoffPress" />
+			</u:headEndItems>
+			<u:user>
+				<u:ShellHeadUserItem
+					image="sap-icon://person-placeholder"
+					username="Karl Mustermann"
+					press="handleUserItemPressed" />
+			</u:user>
+			<u:search>
+			</u:search>
+			<u:paneContent>
+				<m:Text text="Lorem ipsum" />
+			</u:paneContent>
+		</u:Shell>
 	<App>
 		<pages>
 			<Page title="Adaptive Cruise Control (ACC)" navButtonPress="onNavBack" showNavButton="true">
