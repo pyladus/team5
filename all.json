@@ -1,6 +1,14 @@
-
 {
 	"ProductCollection": [
+		{
+			"ProductId": "1239101",
+			"Name": "Radar-controlled Front Assist",
+			"Category": "Interior",
+			"SupplierName": "Volkswagen",
+			"Description": "Working together with the radar-controlled Front Assist traffic monitoring system, our adaptive cruise control system keeps you a safe distance from the vehicle in front and that makes driving much easier in slow and stop and go traffic.",
+			"WeightMeasure": "95%",
+			"ProductPicUrl": "img/acc.PNG"
+		},
 		{
 			"ProductId": "1239101",
 			"Name": "Door mirrors, electrically foldable",
